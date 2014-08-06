@@ -1,0 +1,373 @@
+{
+  "_id": "admin@cheminfo.org:view:Spectra:NMR:Tools:Resurrection",
+  "_rev": "1-95d301fe30c8ccbecae60e359d45c760",
+  "modules": [
+    {
+      "url": "modules/types/server_interaction/webservice_search/",
+      "configuration": {
+        "sections": {
+          "postvariables": [
+            {
+              "sections": {},
+              "groups": {
+                "postvariables": [
+                  []
+                ]
+              }
+            }
+          ]
+        },
+        "groups": {
+          "group": [
+            {
+              "url": [
+                "http://www.nmrdb.org/service/resurrection?acsString={acsString}"
+              ],
+              "method": [
+                "GET"
+              ],
+              "button": [
+                []
+              ],
+              "buttonlabel": [
+                "Resurrect"
+              ],
+              "buttonlabel_exec": [
+                "Resurrecting"
+              ],
+              "onloadsearch": [
+                [
+                  "button"
+                ]
+              ],
+              "resultfilter": [
+                null
+              ]
+            }
+          ],
+          "headers": [
+            [
+              {}
+            ]
+          ],
+          "searchparams": [
+            [
+              {
+                "name": "acsString",
+                "label": "ACS String",
+                "defaultvalue": "1H NMR (CDCl3): ? = 0.84 (3 H, t, J = 7.4 Hz, CH3), 0.94 (3 H, t, J = 7.4 Hz, CH3), 1.23 [6 H, q, J = 6.9 Hz, P(O)OCH2CH3], 1.51 (4 H, m, CH2), 2.20 (1 H, sextet, J = 6.6 Hz, CH), 3.80 (3 H, s, OCH3), 4.01 [4 H, m, P(O)OCH2CH3], 4.63 (1 H, d, JH,P = 17.1 Hz, NCHP), 6.88 (2 H, d, J = 8.6 Hz, CH), 7.46 (2 H, dd, J = 8.6 Hz, JH,P = 2.3 Hz, CH), 7.56 (1 H, dd, J = 6.6 Hz, JH,P = 4.6 Hz, HC=N)",
+                "fieldtype": "textarea",
+                "fieldoptions": "rows=10",
+                "destination": "url"
+              }
+            ]
+          ]
+        }
+      },
+      "id": 1,
+      "vars_in": [],
+      "actions_in": [
+        {}
+      ],
+      "vars_out": [
+        {
+          "event": "onSearchReturn",
+          "rel": "results",
+          "jpath": [
+            "jcamp"
+          ],
+          "name": "jcamp"
+        }
+      ],
+      "actions_out": {},
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 1,
+            "top": 0,
+            "right": 0
+          },
+          "size": {
+            "width": 36,
+            "height": 39
+          },
+          "display": true,
+          "title": "In-line NMR description",
+          "bgcolor": [
+            255,
+            255,
+            255,
+            0
+          ],
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer"
+        }
+      },
+      "title": "In-line NMR description"
+    },
+    {
+      "url": "modules/types/science/spectra/spectra_displayer/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "graphurl": [
+                ""
+              ],
+              "flip": [
+                [
+                  "flipX"
+                ]
+              ],
+              "displayAxis": [
+                [
+                  "x"
+                ]
+              ],
+              "grids": [
+                []
+              ],
+              "xLabel": [
+                ""
+              ],
+              "yTopSpacing": [
+                0
+              ],
+              "yBottomSpacing": [
+                "0.05"
+              ],
+              "xLeftSpacing": [
+                0
+              ],
+              "xRightSpacing": [
+                0
+              ],
+              "yLabel": [
+                ""
+              ],
+              "minX": [
+                ""
+              ],
+              "maxX": [
+                ""
+              ],
+              "minY": [
+                ""
+              ],
+              "maxY": [
+                ""
+              ],
+              "zoom": [
+                "x"
+              ],
+              "shiftxtozero": [
+                []
+              ],
+              "xastime": [
+                []
+              ],
+              "wheelAction": [
+                "zoomY"
+              ],
+              "fullOut": [
+                "both"
+              ]
+            }
+          ],
+          "plotinfos": [
+            [
+              {
+                "variable": "jcamp",
+                "plotcolor": [
+                  1,
+                  1,
+                  255,
+                  1
+                ],
+                "strokewidth": "1",
+                "plotcontinuous": [
+                  "continuous"
+                ],
+                "peakpicking": [],
+                "markers": [],
+                "normalize": "max1",
+                "optimizeSlots": []
+              },
+              {
+                "variable": "experimental",
+                "plotcolor": [
+                  255,
+                  0,
+                  9,
+                  0.5
+                ],
+                "strokewidth": "2",
+                "plotcontinuous": [
+                  "continuous",
+                  "continuous"
+                ],
+                "peakpicking": [],
+                "markers": [],
+                "normalize": "max1",
+                "optimizeSlots": [
+                  "slots"
+                ]
+              }
+            ]
+          ]
+        }
+      },
+      "id": 2,
+      "vars_in": [
+        {
+          "rel": "jcamp",
+          "name": "jcamp"
+        },
+        {
+          "rel": "jcamp",
+          "name": "experimental"
+        }
+      ],
+      "actions_in": [
+        {}
+      ],
+      "vars_out": [
+        {}
+      ],
+      "actions_out": [
+        {}
+      ],
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 38,
+            "top": 0,
+            "right": 0
+          },
+          "size": {
+            "width": 69,
+            "height": 39
+          },
+          "display": true,
+          "title": "Resurrected NMR spectrum",
+          "bgcolor": [
+            255,
+            255,
+            255,
+            0
+          ],
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer"
+        }
+      },
+      "title": "Resurrected NMR spectrum"
+    },
+    {
+      "url": "modules/types/client_interaction/dragdrop/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "label": [
+                "Drop or paste a jcamp file"
+              ]
+            }
+          ],
+          "vars": [
+            [
+              {
+                "extension": "jdx",
+                "filetype": "text",
+                "type": "jcamp",
+                "variable": "jcamp"
+              },
+              {
+                "extension": "dx",
+                "filetype": "text",
+                "type": "jcamp",
+                "variable": "jcamp"
+              }
+            ]
+          ],
+          "string": [
+            [
+              {
+                "type": "jcamp",
+                "variable": "jcamp"
+              }
+            ]
+          ]
+        }
+      },
+      "id": 3,
+      "vars_in": [],
+      "actions_in": {},
+      "vars_out": [
+        {
+          "event": "onRead",
+          "rel": "data",
+          "jpath": [
+            "jcamp",
+            "content"
+          ],
+          "name": "experimental"
+        }
+      ],
+      "actions_out": [
+        {}
+      ],
+      "zindex": 4,
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 38,
+            "top": 40,
+            "right": 0
+          },
+          "size": {
+            "width": 69,
+            "height": 8
+          },
+          "display": true,
+          "title": "Superimpose exp. spectrum",
+          "bgcolor": [
+            255,
+            255,
+            255,
+            0
+          ],
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer"
+        }
+      },
+      "title": "Superimpose exp. spectrum"
+    }
+  ],
+  "variables": [
+    {
+      "varname": "exercises",
+      "jpath": [
+        "exercises"
+      ]
+    }
+  ],
+  "configuration": {
+    "title": "Resurrect NMR spectrum"
+  },
+  "version": "2.4.1",
+  "pouchvariables": [],
+  "grid": {
+    "layers": {
+      "Default layer": {
+        "name": "Default layer"
+      }
+    },
+    "xWidth": 10,
+    "yHeight": 10
+  }
+}

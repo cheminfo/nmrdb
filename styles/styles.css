@@ -1,0 +1,325 @@
+/* CSS Document */
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+    background-image: none !important
+}
+.lineover {
+	background-image: url(../images/bgbottommenu.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+h1.nmr {font-size: 13px; color: #385EA3; font-weight: bold; font-family: Verdana;
+        background-image: url(../images/simbol_subtitlu.jpg);
+        background-repeat:no-repeat;
+        text-indent:0.7cm;
+ }
+
+h2 {font-size: 12px; font-weight: bold; font-family: Verdana;
+ }
+
+a {color: #385EA3; text-decoration:none; font-weight: bold;}
+a:link {color: #385EA3; text-decoration:none; font-weight: bold;}
+a:visited {color: #385EA3 !important; text-decoration:none; font-weight: bold;}
+a:active {color: #385EA3; text-decoration:none; font-weight: bold;}
+a:hover {color: #385EA3; text-decoration:underline; font-weight: bold;}
+
+
+/* Chemical table formatting, coming out of the database */
+
+
+.chemical {}
+.chemical table {}
+.chemical th {color:#FFFFFF; }
+.chemical td { }
+.chemicalover td { }
+.chemicalhover td { }
+
+
+/* Style used for the links in the table, usualy at the level of the name and the molecular formula */
+.chemical a:link {font-weight: normal; color: #000000; font-family: Verdana; font-size: 11px;}
+.chemical a:visited {font-weight: normal; color: #00AAAA; font-family: Verdana;  font-size: 11px;}
+.chemical a:active {font-weight: normal; color: #00AA00; font-family: Verdana; font-size: 11px; }
+.chemical a:hover {font-weight: normal; color: #00AA00; font-family: Verdana;  font-size: 11px;}
+
+/* Style used for the links in the header of the table (for sorting by column) */
+.sort a:link {color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 11px;}
+.sort a:visited {color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 11px;}
+.sort a:active {color: #FFFFFF;font-family: Verdana; font-weight: bold; font-size: 11px; }
+.sort a:hover {color: #FFFFFF; text-decoration: underline; font-size: 11px;}
+
+/* Style used for the links in the chemical table for "order" or "Get offer" */
+.order a {font-size: 10px; color: #4188D6; text-decoration: none;}
+.order a:link {font-size: 10px; color: #4188D6; text-decoration: none;}
+.order a:visited {font-size: 10px; color: #4188D6; text-decoration: none;}
+.order a:active {font-size: 10px; color: #4188D6; text-decoration: none;}
+.order a:hover {font-size: 10px; color: #0000EE; text-decoration: underline;}
+
+/* Style used for the small link to go to the top of the page */
+.gototop { font-weight: normal; color: #1E2C5D; font-size:10px}
+.gototop a:link {font-weight: normal; color: #1E2C5D; font-size:10px}
+.gototop a:visited {font-weight: normal ;color: #1E2C5D; font-size:10px}
+.gototop a:active {font-weight: normal;color: #1E2C5D; font-size:10px }
+.gototop a:hover {font-weight: normal;color: #1E2C5D; font-size:10px }
+
+.results {font-weight: normal; color: #000000; font-size:10px; }
+
+/* Style used for the links in the bottom or top of the table for the next - prev */
+.nextprev { font-weight: normal; color: #1E2C5D; font-size:10px;}
+.nextprev a:link {font-weight: normal; color: #1E2C5D; font-size:10px;}
+.nextprev a:visited {font-weight: normal ;color: #1E2C5D; font-size:10px;}
+.nextprev a:active {font-weight: normal;color: #1E2C5D; font-size:10px; }
+.nextprev a:hover {font-weight: normal;color: #1E2C5D;  font-size:10px;}
+
+
+
+
+.textheader{
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-style:normal;
+font-weight:normal;
+text-decoration:none;
+color:#000000;
+}    
+.simpletext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	font-size: 11px;
+	color: #000000;
+}
+.menu1{
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-style:normal;
+font-weight:bold;
+text-decoration:none;
+color:#000000;
+}
+
+.menu{
+	list-style-type:none;
+	font-weight:bold;
+	margin:0 0 0 5px;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;font-size:11px;
+}
+.menu li{
+    display:inline;
+    padding-right:10px;
+}
+.menu li a:hover{
+    color:#FF4800;
+}
+
+ul.menu li.current a {
+    color: black !important;
+    pointer-events: none;
+    cursor: default;
+    font-weight: bold;
+}
+
+p.explanations {
+    font-size: 12px;
+}
+
+.menu1 a:link {font-family:Arial, Helvetica, sans-serif;font-size:11px;font-style:normal;font-weight:bold;text-decoration:none;color:#000000;}
+.menu1 a:visited {font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-style:normal;
+font-weight:bold;
+text-decoration:none;
+color:#000000;}
+.menu1 a:active {font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-style:normal;
+font-weight:bold;
+text-decoration:none;
+color:#FF4800;}
+.menu1 a:hover {font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-style:normal;
+font-weight:bold;
+text-decoration:none;
+color:#FF4800;}
+
+.menu2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration:none;
+}
+.menu2 a:link {font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration:none;}
+.menu2 a:visited {font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration:none;}
+.menu2 a:active {font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration:none;}
+.menu2 a:hover {font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #990000;
+	font-weight: bold;
+	text-decoration:none;}
+
+.textcopyright{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-style:normal;
+font-weight:normal;
+text-decoration:none;
+color:#404040;
+}	
+
+.rightmenutitle{
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+font-style:normal;
+font-weight:bold;
+text-decoration:none;
+color:#FFFFFF;
+}
+.go{
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:bold;
+text-decoration:none;
+color:#000000;
+}
+.go a:link 
+{font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:bold;
+text-decoration:none;
+color:#000000
+}
+.readmore{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-style:normal;
+font-weight:bold;
+text-decoration:none;
+color:#000000;
+}	
+.motto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+}
+
+.jipcontent{
+	border:1px solid #aaa;
+}
+.jipedit{
+	border:1px solid #147414;
+	background-color:#F6DD77;
+	font-size:10px;
+}
+
+td .left {
+    background: url(../images/rigla_stanga.gif) repeat-y left;
+}
+
+td .right {
+    background: url(../images/rigla_dreapta.jpg) repeat-y right;
+}
+
+td .header-right {
+    background: url("../images/colt_dreapta_sus.jpg") right top no-repeat;
+}
+
+td .header-left {
+    background:url("../images/colt_stanga_sus.jpg") top left no-repeat;
+}
+
+td .footer-left {
+    background: url(../images/colt_stanga_jos.jpg) no-repeat bottom left;
+}
+
+td .footer-bottom {
+    background: url(../images/rigla_jos.jpg) repeat-x bottom;
+}
+td .footer-right {
+    background: url(../images/colt_dreapta+jos.jpg) no-repeat;
+}
+
+td .header-link {
+    background:url("../images/colt_butoane_sus.jpg") #FFA37F no-repeat bottom left;
+}
+
+td .logo {
+    background: url("../images/logo.jpg") no-repeat top left;
+    width: 200px;
+    height: 55px;
+}
+
+td.menu {
+    background: url("../images/bgtablemenu.gif")
+}
+
+.content {
+    padding: 1px 10px 0px;
+}
+
+.epfl-logo {
+    background: url(../images/epfl.svg) no-repeat;
+    background-size: 115px;
+}
+
+.isic-links {
+    width:550px;
+}
+
+#breadcrumbs {
+    text-align: right;
+}
+
+#breadcrumbs li {
+    display: inline;
+    padding-right: 12px;
+    position: relative;
+}
+
+#breadcrumbs a {
+    padding-right: 12px;
+    background: url(../images/separator.png) right no-repeat;
+    font-size: 15px;
+}
+
+#breadcrumbs a.last{
+    background: none;
+}
+
+.local-color-text {
+    color: #007ba5;
+}
+
+#isic-title {
+    font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-serif;
+    font-size: 20px;
+    color: #000;
+    line-height: 32px;
+    letter-spacing: .06em;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#isic-title span {
+    padding: 0; margin: 0;
+}

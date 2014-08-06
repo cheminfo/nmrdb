@@ -1,0 +1,12 @@
+<script>
+    var path = window.location.pathname;
+    var reg = /\/pages\/([^\/]*)/;
+    var m = reg.exec(path);
+    if(m[1]) {
+        console.log(m[1]);
+        var elements = document.getElementsByClassName(m[1]);
+        if(elements && elements[0]) {
+            elements[0].className = elements[0].className + " current";
+        }
+    }
+</script>
