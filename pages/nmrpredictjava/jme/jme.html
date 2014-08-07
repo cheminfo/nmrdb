@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>JME Molecular Editor</title>
+
+
+<script type="text/javascript" language="javascript" src="jsme/jsme.nocache.js"></script>
+
+
+<script language=Javascript>
+<!--
+	var requester=null;
+	var copytoclip=1
+	function HighlightAll(theField) {
+		var tempval=eval("document."+theField)
+		tempval.focus()
+		tempval.select()
+		if (document.all&&copytoclip==1){
+			therange=tempval.createTextRange()
+			therange.execCommand("Copy")
+			window.status="Contents highlighted and copied to clipboard!"
+			setTimeout("window.status=''",2400);
+		}
+	}
+	function getSmiles() {
+	  var drawing = document.JME.smiles();
+	 document.form1.select.value = drawing;
+	}
+
+	function initializeRequester() {
+		/* Even though the XMLHttpRequest object allows us to call the open() method multiple times, 
+			each object can really only be used for one call, as the onreadystatechange event doesn't 
+			update again once readyState changes to "4" (in Mozilla). Therefore, we have to create a new 
+			XMLHttpRequest object every time we want to make a remote call.
+		*/
+		
+		 /* Check for running connections */ 
+		if (requester != null && requester.readyState != 0 && requester.readyState != 4) {
+			requester.abort(); 
+		} 
+		
+		try { 
+			requester = new XMLHttpRequest(); 
+		} catch (error) { 
+			try { 
+				requester = new ActiveXObject("Microsoft.XMLHTTP"); 
+			} catch (error) { 
+				requester = null;
+				return false; 
+			} 
+		}
+		return true; 
+	}
+
+	function setSmiles() {
+		if (initializeRequester()) {
+			requester.onreadystatechange = setMolfile;				
+			var theUrl="http://www.chemexper.com/tools/smiles2molfile?smiles="+escape(document.form1.select.value);
+			requester.open("GET", theUrl, true);
+ 			requester.send(null);
+
+		} else {
+ 			alert("Unable to initialize Ajax");
+ 		}		
+	}
+
+	function setMolfile() {
+		if (requester.readyState == 4) {
+			if (requester.status == 200) {
+				var molfile=requester.responseText;
+				document.JME.readMolFile(molfile);
+			}
+		}
+	}
+
+
+-->
+</script>
+
+
+</head>
+
+<body bgcolor="#ffffff">
+<center>
+	<div id="JME"></div>
+	<script>
+		// "noquery,nohydrogens,polarnitro,nocanonize,oldlook
+		function jsmeOnLoad() {
+			jsmeApplet = new JSApplet.JSME("JME", "380px", "340px", {
+				"options" : "noquery,oldlook"
+			});
+			document.JME = jsmeApplet;
+		}
+	</script>
+</center>
+
+	To copy the structure code, just click on the "copy" button. If you are using a macintosh you should click on the top left button and copy the value present in the window that opens.
+	<FORM name=form1>
+	  <input type="text" value="" name="select">
+	<input type="button" onClick="getSmiles(); HighlightAll('form1.select')" value="Copy">
+	<input type="button" onClick="setSmiles(); " value="Put SMILES in applet">
+	</FORM>
+
+<center>
+	
+</body>
+</html>
+

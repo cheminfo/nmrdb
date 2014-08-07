@@ -1,0 +1,45 @@
+<tml>
+<head>
+<title>JME Molecular Editor</title>
+
+    <script type="text/javascript" language="javascript" src="jsme/jsme.nocache.js"></script>
+
+
+    <script language="JavaScript">
+function submitMol() {
+  var mol = document.JME.molFile();
+  if (mol == "") {
+    alert("Nothing to submit");
+  }
+  else {
+    opener.fromEditor(mol, document.JME.smiles());
+    window.close();
+  }
+}
+function openHelpWindow() {
+  window.open("jme_help_window.html","","toolbar=no,menubar=no,scroolbars=no,resizable=yes,width=500,height=600")
+}
+</SCRIPT>
+</head>
+<body bgcolor="#ffffff">
+<center>
+
+    <div id="JME"></div>
+    <script>
+        // "noquery,nohydrogens,polarnitro,nocanonize,oldlook
+        function jsmeOnLoad() {
+            jsmeApplet = new JSApplet.JSME("JME", "380px", "340px", {
+                "options" : "polarnitro,noquery,oldlook"
+            });
+            document.JME = jsmeApplet;
+        }
+    </script>
+
+<form name="form_editor">
+<input type="button" value=" Submit Molecule " onClick = "submitMol()">
+&nbsp;&nbsp;
+<input type="button" value="  Close  " onClick = "window.close()">
+</form>
+</center>
+</body>
+</html>
