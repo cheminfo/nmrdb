@@ -277,10 +277,19 @@ td.menu {
 .epfl-logo {
     background: url(../images/epfl.svg) no-repeat;
     background-size: 115px;
+    background-position:right;
+    width: 180px;
+}
+
+.univalle-logo {
+    background: url(../images/univalle.jpg) no-repeat;
+    background-size: 45px;
+    background-position:center;
+    width: 150px;
 }
 
 .isic-links {
-    width:550px;
+    width:450px;
 }
 
 #breadcrumbs {
@@ -309,7 +318,7 @@ td.menu {
 
 #isic-title {
     font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: #000;
     line-height: 32px;
     letter-spacing: .06em;
