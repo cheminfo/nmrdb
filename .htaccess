@@ -4,3 +4,4 @@ AddType text/html .shtml
 AddOutputFilter INCLUDES .shtml
 
 DirectoryIndex index.shtml
+

@@ -48,4 +48,13 @@
     </td>
     <td background="images/rigla_dreapta.jpg" class="right">&nbsp;
     </td>
+    <script>
+        var elements = document.getElementsByClassName('epfl-logo');
+        if(elements.length > 0) {
+            console.log('elements', elements);
+            elements[0].onclick = function() {
+                console.log('click logo');
+            }
+        }
+    </script>
 </tr>

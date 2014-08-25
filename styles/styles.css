@@ -11,11 +11,15 @@ body {
 	background-repeat: repeat-x;
 	background-position: bottom;
 }
-h1.nmr {font-size: 13px; color: #385EA3; font-weight: bold; font-family: Verdana;
-        background-image: url(../images/simbol_subtitlu.jpg);
-        background-repeat:no-repeat;
-        text-indent:0.7cm;
- }
+h1.nmr {font-size: 13px;
+    color: #385EA3;
+    font-weight: bold;
+    font-family: Verdana;
+    background-image: url(../images/simbol_subtitlu.jpg);
+    background-repeat:no-repeat;
+    text-indent:0.7cm;
+    margin-bottom: 18px;
+}
 
 h2 {font-size: 12px; font-weight: bold; font-family: Verdana;
  }
@@ -107,6 +111,7 @@ color:#000000;
 	margin:0 0 0 5px;
 	padding:0;
 	font-family:Arial, Helvetica, sans-serif;font-size:11px;
+    margin-bottom: 12px;
 }
 .menu li{
     display:inline;
