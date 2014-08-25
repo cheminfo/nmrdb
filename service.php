@@ -16,7 +16,9 @@
     var views = {
 		
       'nmr-spectra-predictor': './predictor_all/?viewURL=view.json&config=../config.json',
-	  'nmr-predictor': './new_predictor/?viewURL=view.json&config=../config.json'
+	  'nmr-predictor': './new_predictor/?viewURL=view.json&config=../config.json',
+	  'cosy-predictor': './cosy/?viewURL=view.json&config=../config.json',
+	  'hmbc-predictor': './hmbc/?viewURL=view.json&config=../config.json'
     };
     
     // Creating data object
