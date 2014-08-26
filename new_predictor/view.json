@@ -48,8 +48,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 34
+                        "width": 37.01818182468414,
+                        "height": 34.01818182468414
                     },
                     "display": true,
                     "title": "Draw a chemical structure to predict",
@@ -109,8 +109,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 34
+                        "width": 37.01818182468414,
+                        "height": 34.01818182468414
                     },
                     "display": true,
                     "title": "Chemical structure with hydrogen exploded",
@@ -210,8 +210,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 29,
-                        "height": 26
+                        "width": 29.01818182468414,
+                        "height": 26.01818182468414
                     },
                     "display": true,
                     "title": "Spinus predicted chemical shifts",
@@ -292,8 +292,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 63,
-                        "height": 8
+                        "width": 63.01818182468414,
+                        "height": 8.018181824684143
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum",
@@ -368,8 +368,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33,
-                        "height": 26
+                        "width": 33.01818182468414,
+                        "height": 26.01818182468414
                     },
                     "display": true,
                     "title": "J",
@@ -530,8 +530,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 138,
-                        "height": 31
+                        "width": 138.01818182468415,
+                        "height": 31.01818182468414
                     },
                     "display": true,
                     "title": "Untitled module",
@@ -768,7 +768,7 @@
                 "general": [
                     {
                         "script": [
-                            "require(['src/util/pouchtovar'], function(pouchtovar) {\n    Promise.all([pouchtovar.pouchToVar('external_infos', 'molfile'), pouchtovar.pouchToVar('external_infos', 'smiles')]).then(function(value) {\n        var molfile = value[0];\n        var smiles = value[1];\n        \n\n        if(!molfile._rev && !smiles._rev) {\n            console.log('not available');\n            return;\n        }\n        var useMolfile = (molfile._rev && !smiles._rev) || (molfile._rev && smiles._rev && molfile.timestamp > smiles.timestamp);\n        \n        if(useMolfile) {\n            console.log('use molfile', molfile);\n            API.createData('molfile', molfile);\n            API.createData('molfile-ext', molfile);\n            \n\n            \n            \n        }\n        else {\n            console.log('use smiles');\n            $.ajax({\n                url: 'http://www.nmrdb.org/service/smiles2molfile?smiles='+smiles.get(),\n                type: 'GET',\n                dataType: 'json'\n            }).done(function(val){\n                var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile-ext', molfile);\n                API.createData('molfile', molfile);\n                \n                setTimeout(function() {\n                    API.doAction('donmrpedict');\n                }, 0);\n            })\n        }\n    });\n    \n    \n    console.log(pouchtovar);\n});"
+                            "require(['src/util/pouchtovar'], function(pouchtovar) {\n    Promise.all([pouchtovar.pouchToVar('external_infos', 'molfile'), pouchtovar.pouchToVar('external_infos', 'smiles')]).then(function(value) {\n        var molfile = value[0];\n        var smiles = value[1];\n        \n\n        if(!molfile._rev && !smiles._rev) {\n            console.log('not available');\n            return;\n        }\n        var useMolfile = (molfile._rev && !smiles._rev) || (molfile._rev && smiles._rev && molfile.timestamp > smiles.timestamp);\n        \n        if(useMolfile) {\n            console.log('use molfile', molfile);\n            $.ajax({\n                url: 'http://script.epfl.ch/script/Service/20140826/IXnW4ymIPf',\n                type: 'POST',\n                data: { molfile: molfile.get() },\n                dataType: 'json'\n            }).done(function(val) {\n                console.log('checked molfile:', val);\n                var checkedMolfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', checkedMolfile);\n                API.createData('molfile-ext', checkedMolfile);\n            });\n            \n\n            \n            \n        }\n        else {\n            console.log('use smiles');\n            $.ajax({\n                url: 'http://www.nmrdb.org/service/smiles2molfile',\n                type: 'POST',\n                data: {smiles: smiles.get()},\n                dataType: 'json'\n            }).done(function(val){\n                var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', molfile);\n                API.createData('molfile-ext', molfile);\n            })\n        }\n    });\n    \n    \n    console.log(pouchtovar);\n});"
                         ]
                     }
                 ]

@@ -39,8 +39,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 40,
-                        "height": 42
+                        "width": 40.01818182468414,
+                        "height": 42.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -201,8 +201,8 @@
                         "top": 17.9985782623291
                     },
                     "size": {
-                        "width": 38,
-                        "height": 21
+                        "width": 38.01818182468414,
+                        "height": 21.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -364,8 +364,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 38,
-                        "height": 17
+                        "width": 38.01818182468414,
+                        "height": 17.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -526,8 +526,8 @@
                         "top": 17.9985782623291
                     },
                     "size": {
-                        "width": 38,
-                        "height": 21
+                        "width": 38.01818182468414,
+                        "height": 21.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -687,8 +687,8 @@
                         "top": 39.99999885559082
                     },
                     "size": {
-                        "width": 38,
-                        "height": 33
+                        "width": 38.01818182468414,
+                        "height": 33.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -852,8 +852,8 @@
                         "top": 39.99999885559082
                     },
                     "size": {
-                        "width": 38,
-                        "height": 33
+                        "width": 38.01818182468414,
+                        "height": 33.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1200,8 +1200,8 @@
                         "top": 43
                     },
                     "size": {
-                        "width": 16,
-                        "height": 7
+                        "width": 16.01818182468414,
+                        "height": 7.018181824684143
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1277,8 +1277,8 @@
                         "top": 14
                     },
                     "size": {
-                        "width": 15,
-                        "height": 13
+                        "width": 15.018181824684143,
+                        "height": 13.018181824684143
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1368,8 +1368,8 @@
                         "top": 28
                     },
                     "size": {
-                        "width": 15,
-                        "height": 13
+                        "width": 15.018181824684143,
+                        "height": 13.018181824684143
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1459,8 +1459,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 15,
-                        "height": 13
+                        "width": 15.018181824684143,
+                        "height": 13.018181824684143
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1526,8 +1526,8 @@
                         "top": 42.9985767364502
                     },
                     "size": {
-                        "width": 22,
-                        "height": 29
+                        "width": 22.01818182468414,
+                        "height": 29.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1607,8 +1607,8 @@
                         "top": 56
                     },
                     "size": {
-                        "width": 15,
-                        "height": 13
+                        "width": 15.018181824684143,
+                        "height": 13.018181824684143
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1698,8 +1698,8 @@
                         "top": 42
                     },
                     "size": {
-                        "width": 15,
-                        "height": 13
+                        "width": 15.018181824684143,
+                        "height": 13.018181824684143
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1964,7 +1964,7 @@
                 "general": [
                     {
                         "script": [
-                            "require(['src/util/pouchtovar'], function(pouchtovar) {\n    Promise.all([pouchtovar.pouchToVar('external_infos', 'molfile'), pouchtovar.pouchToVar('external_infos', 'smiles')]).then(function(value) {\n        var molfile = value[0];\n        var smiles = value[1];\n        \n\n        if(!molfile._rev && !smiles._rev) {\n            console.log('not available');\n            return;\n        }\n        var useMolfile = (molfile._rev && !smiles._rev) || (molfile._rev && smiles._rev && molfile.timestamp > smiles.timestamp);\n        \n        if(useMolfile) {\n            console.log('use molfile');\n            API.createData('molfile', molfile);\n            API.createData('molfile-ext', molfile);\n        }\n        else {\n            console.log('use smiles');\n            $.ajax({\n                url: 'http://www.nmrdb.org/service/smiles2molfile?smiles='+smiles.get(),\n                type: 'GET',\n                dataType: 'json'\n            }).done(function(val){\n                var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', molfile);\n                API.createData('molfile-ext', molfile);\n            })\n        }\n    });\n});"
+                            "require(['src/util/pouchtovar'], function(pouchtovar) {\n    Promise.all([pouchtovar.pouchToVar('external_infos', 'molfile'), pouchtovar.pouchToVar('external_infos', 'smiles')]).then(function(value) {\n        var molfile = value[0];\n        var smiles = value[1];\n        \n\n        if(!molfile._rev && !smiles._rev) {\n            console.log('not available');\n            return;\n        }\n        var useMolfile = (molfile._rev && !smiles._rev) || (molfile._rev && smiles._rev && molfile.timestamp > smiles.timestamp);\n        \n        if(useMolfile) {\n            console.log('use molfile', molfile);\n            $.ajax({\n                url: 'http://script.epfl.ch/script/Service/20140826/IXnW4ymIPf',\n                type: 'POST',\n                data: { molfile: molfile.get() },\n                dataType: 'json'\n            }).done(function(val) {\n                console.log('checked molfile:', val);\n                var checkedMolfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', checkedMolfile);\n                API.createData('molfile-ext', checkedMolfile);\n            });\n            \n\n            \n            \n        }\n        else {\n            console.log('use smiles');\n            $.ajax({\n                url: 'http://www.nmrdb.org/service/smiles2molfile',\n                type: 'POST',\n                data: {smiles: smiles.get()},\n                dataType: 'json'\n            }).done(function(val){\n                var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', molfile);\n                API.createData('molfile-ext', molfile);\n            })\n        }\n    });\n    \n    \n    console.log(pouchtovar);\n});"
                         ]
                     }
                 ]

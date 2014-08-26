@@ -39,8 +39,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 40,
-                        "height": 42
+                        "width": 40.01818182468414,
+                        "height": 42.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -203,8 +203,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 80,
-                        "height": 69
+                        "width": 80.01818182468415,
+                        "height": 69.01818182468415
                     },
                     "zIndex": 0,
                     "display": true,
@@ -281,7 +281,7 @@
                     "group": [
                         {
                             "url": [
-                                "http://script.epfl.ch/script/Service/20140527/0ailQnpul0"
+                                "http://script.epfl.ch/script/Service/20140826/aA5Bt985sv"
                             ],
                             "method": [
                                 "POST"
@@ -383,25 +383,6 @@
                     "rel": "results",
                     "jpath": [
                         "result",
-                        "jme",
-                        "jmeNumbers"
-                    ],
-                    "name": "jme"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "result",
-                        "jcampMS"
-                    ],
-                    "name": "ms"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "result",
                         "spectrumCOSY",
                         "jcamp2D"
                     ],
@@ -416,82 +397,6 @@
                         "annotations2D"
                     ],
                     "name": "cosyPP"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "result",
-                        "spectrumHMBC",
-                        "jcamp2D"
-                    ],
-                    "name": "hmbc"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "result",
-                        "spectrumHMBC",
-                        "annotations2D"
-                    ],
-                    "name": "hmbcPP"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "result",
-                        "spectrum1H",
-                        "jcamp"
-                    ],
-                    "name": "jcamp1H"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "result",
-                        "spectrum1H",
-                        "annotations"
-                    ],
-                    "name": "annotations1H"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "result",
-                        "spectrum13C",
-                        "jcamp"
-                    ],
-                    "name": "jcamp13C"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "result",
-                        "spectrum13C",
-                        "annotations"
-                    ],
-                    "name": "annotations13C"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "predictions"
-                    ],
-                    "name": "predictions"
-                },
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "chemcalc"
-                    ],
-                    "name": "chemcalc"
                 }
             ],
             "actions_out": [
@@ -551,8 +456,8 @@
                         "top": 43
                     },
                     "size": {
-                        "width": 16,
-                        "height": 6
+                        "width": 39.01818182468414,
+                        "height": 6.018181824684143
                     },
                     "zIndex": 0,
                     "display": true,
@@ -628,8 +533,8 @@
                         "top": 50
                     },
                     "size": {
-                        "width": 16,
-                        "height": 19
+                        "width": 39.01818182468414,
+                        "height": 19.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -671,63 +576,6 @@
                 }
             ],
             "actions_in": {},
-            "actions_out": {},
-            "zindex": 3
-        },
-        {
-            "url": "modules/types/display/template-twig/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "template": [
-                                "<center><h2>Calculations</h2></center>\n\n<table>\n    <tr>\n        <th>log P:</th>\n        <td>{{predictions.logP}}</td>\n    </tr>\n     <tr>\n        <th>log S:</th>\n        <td>{{predictions.logS}}</td>\n    </tr>\n         <tr>\n        <th>Stereocenters:</th>\n        <td>{{predictions.stereoCenter}}</td>\n    </tr>\n         <tr>\n        <th>PSA:</th>\n        <td>{{predictions.polarSurfaceArea}}</td>\n    </tr>\n    <tr>\n        <th>H Bond donor:</th>\n        <td>{{predictions.hDonor}}</td>\n    </tr>\n    <tr>\n        <th>H Bond acceptor:</th>\n        <td>{{predictions.hAcceptor}}</td>\n    </tr>\n    <tr>\n        <th>MF:</th>\n        <td>{{rendertype(chemcalc.mf)}}</td>\n    </tr>\n     <tr>\n        <th>Mass weight:</th>\n        <td>{{rendertype(chemcalc.mw)}}</td>\n    </tr>\n</table>\n\n"
-                            ]
-                        }
-                    ]
-                }
-            },
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 18,
-                        "top": 43
-                    },
-                    "size": {
-                        "width": 22,
-                        "height": 26
-                    },
-                    "zIndex": 0,
-                    "display": true,
-                    "title": "Molecular information",
-                    "bgcolor": [
-                        [
-                            255,
-                            255,
-                            255,
-                            0
-                        ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
-                }
-            },
-            "id": 6,
-            "vars_in": [
-                {
-                    "rel": "value",
-                    "name": "predictions"
-                },
-                {
-                    "rel": "value",
-                    "name": "chemcalc"
-                }
-            ],
-            "actions_in": {},
-            "title": "Molecular information",
-            "vars_out": {},
             "actions_out": {},
             "zindex": 3
         },
@@ -778,7 +626,7 @@
                     ]
                 }
             },
-            "id": 7,
+            "id": 6,
             "vars_in": [],
             "actions_in": {},
             "title": "Untitled",
@@ -951,7 +799,7 @@
                 "general": [
                     {
                         "script": [
-                            "require(['src/util/pouchtovar'], function(pouchtovar) {\n    Promise.all([pouchtovar.pouchToVar('external_infos', 'molfile'), pouchtovar.pouchToVar('external_infos', 'smiles')]).then(function(value) {\n        var molfile = value[0];\n        var smiles = value[1];\n        \n\n        if(!molfile._rev && !smiles._rev) {\n            console.log('not available');\n            return;\n        }\n        var useMolfile = (molfile._rev && !smiles._rev) || (molfile._rev && smiles._rev && molfile.timestamp > smiles.timestamp);\n        \n        if(useMolfile) {\n            console.log('use molfile');\n            API.createData('molfile', molfile);\n            API.createData('molfile-ext', molfile);\n            \n        }\n        else {\n            console.log('use smiles');\n            $.ajax({\n                url: 'http://www.nmrdb.org/service/smiles2molfile?smiles='+smiles.get(),\n                type: 'GET',\n                dataType: 'json'\n            }).done(function(val){\n                var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n                \n                API.createData('molfile', molfile);\n                API.createData('molfile-ext', molfile);\n            })\n        }\n    });\n});"
+                            "require(['src/util/pouchtovar'], function(pouchtovar) {\n    Promise.all([pouchtovar.pouchToVar('external_infos', 'molfile'), pouchtovar.pouchToVar('external_infos', 'smiles')]).then(function(value) {\n        var molfile = value[0];\n        var smiles = value[1];\n        \n\n        if(!molfile._rev && !smiles._rev) {\n            console.log('not available');\n            return;\n        }\n        var useMolfile = (molfile._rev && !smiles._rev) || (molfile._rev && smiles._rev && molfile.timestamp > smiles.timestamp);\n        \n        if(useMolfile) {\n            console.log('use molfile', molfile);\n            $.ajax({\n                url: 'http://script.epfl.ch/script/Service/20140826/IXnW4ymIPf',\n                type: 'POST',\n                data: { molfile: molfile.get() },\n                dataType: 'json'\n            }).done(function(val) {\n                console.log('checked molfile:', val);\n                var checkedMolfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', checkedMolfile);\n                API.createData('molfile-ext', checkedMolfile);\n            });\n            \n\n            \n            \n        }\n        else {\n            console.log('use smiles');\n            $.ajax({\n                url: 'http://www.nmrdb.org/service/smiles2molfile',\n                type: 'POST',\n                data: {smiles: smiles.get()},\n                dataType: 'json'\n            }).done(function(val){\n                var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', molfile);\n                API.createData('molfile-ext', molfile);\n            })\n        }\n    });\n});"
                         ]
                     }
                 ]
