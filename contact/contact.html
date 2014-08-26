@@ -6,18 +6,19 @@
             <h2>Add predictor on your own website</h2>
 
             <p>Adding the NMR predicting tool on your website server is not only FREE but also very easy. Just add the following line in which the last parameter is the URL encoded SMILES code:</p>
+            <ul>
+                <li>Java applet predictor: http://www.nmrdb.org/predictor?smiles=</li>
+                <li>HTML5 predictor: http://www.nmrdb.org/service.php?name=nmr-predictor&smiles=CCCC</li>
+            </ul>
 
-            <p>http://www.nmrdb.org/predictor?smiles=</p>
-
-            <p>For example:</p>
-
-            <p><a href="http://www.nmrdb.org/predictor?smiles=C14%28C%28C2%28CC%3DC3%28C%28C2CC1%29%28CCC%28O%29C3%29C%29%29%29CCC4C%28CCCC%28C%29C%29C%29%28C%29" mce_real_href="http://www.nmrdb.org/predictor?smiles=C14%28C%28C2%28CC%3DC3%28C%28C2CC1%29%28CCC%28O%29C3%29C%29%29%29CCC4C%28CCCC%28C%29C%29C%29%28C%29">NMR spectrum of cholesterol</a></p>
+            <p>For example: <a href="../service.php?name=nmr-predictor&smiles=C14%28C%28C2%28CC%3DC3%28C%28C2CC1%29%28CCC%28O%29C3%29C%29%29%29CCC4C%28CCCC%28C%29C%29C%29%28C%29" mce_real_href="http://www.nmrdb.org/predictor?smiles=C14%28C%28C2%28CC%3DC3%28C%28C2CC1%29%28CCC%28O%29C3%29C%29%29%29CCC4C%28CCCC%28C%29C%29C%29%28C%29">NMR spectrum of cholesterol</a></p>
 
             <p>You can also directly submit a molfile, check the source code of this page to see how easy it is!</p>
-
+            <div style="position: relative" id="forms">
             <form id="form" method="post" action="../service.php">
+                <h4>HTML5 predictor</h4>
                 <input type="hidden" name="name" value="nmr-predictor" id="name">
-                <textarea form="form" cols=80 rows=5 name="molfile">Ethylvinylether.mol
+                <textarea form="form" cols=60 rows=5 name="molfile">Ethylvinylether.mol
   FromForm
 
   5  4  0  0  0  0  0  0  0  0999 V2000
@@ -31,9 +32,30 @@
   3  4  1  0  0  0  0
   4  5  1  0  0  0  0
 M  END
-                </textarea>
+                </textarea><br/>
                 <input type="submit">
             </form>
+            <form style="position: absolute; left: 500px; top: 0px" id="form_old" method="post" action="../predictor/">
+                <h4>Java applet predictor</h4>
+                <textarea form="form" cols=60 rows=5 name="molfile">Ethylvinylether.mol
+  FromForm
+
+  5  4  0  0  0  0  0  0  0  0999 V2000
+   -2.5950   -0.3750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2975    0.3725    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000   -0.3750    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2975    0.3725    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5950   -0.3750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  1  0  0  0  0
+  4  5  1  0  0  0  0
+M  END
+                </textarea><br/>
+                <input type="submit">
+            </form>
+            </div>
+            <br/>
 
 
             <h2>Contacting us</h2>
