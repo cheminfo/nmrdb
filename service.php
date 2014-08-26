@@ -1,8 +1,8 @@
 <html>
 <head>
-    <script src="/visualizer/testcase/externalReq/lib/pouchdb-2.2.2.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/visualizer/testcase/externalReq/lib/setimmediate.js" type="text/javascript"></script>
-    <script src="/visualizer/testcase/externalReq//lib/promise.js" type="text/javascript"></script>
+    <script src="lib/pouchdb-2.2.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/setimmediate.js" type="text/javascript"></script>
+    <script src="lib/promise.js" type="text/javascript"></script>
 </head>
 <body>
     <script type="text/javascript" charset="utf-8">
