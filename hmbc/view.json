@@ -230,7 +230,7 @@
                     ]
                 }
             },
-            "id": 4,
+            "id": 3,
             "vars_in": [
                 {
                     "rel": "jcamp",
@@ -353,7 +353,7 @@
                             {
                                 "name": "auto",
                                 "destination": "data",
-                                "label": "Auto (HMBC)",
+                                "label": "Auto HMBC coupling",
                                 "defaultvalue": "true",
                                 "fieldtype": "checkbox"
                             },
@@ -377,9 +377,12 @@
                     ]
                 }
             },
-            "id": 5,
+            "id": 4,
             "vars_in": [
-                {}
+                {
+                    "rel": "vartrigger",
+                    "name": "molfile-ext"
+                }
             ],
             "actions_in": [
                 {}
@@ -607,7 +610,7 @@
                     ]
                 }
             },
-            "id": 6,
+            "id": 5,
             "vars_in": [
                 {
                     "rel": "jcamp",
@@ -713,7 +716,7 @@
                     ]
                 }
             },
-            "id": 7,
+            "id": 6,
             "vars_in": [],
             "actions_in": {},
             "vars_out": [
@@ -808,7 +811,7 @@
                     ]
                 }
             },
-            "id": 8,
+            "id": 7,
             "vars_in": [
                 {
                     "rel": "value",
@@ -890,7 +893,7 @@
                     ]
                 }
             },
-            "id": 9,
+            "id": 8,
             "vars_in": [],
             "actions_in": {},
             "vars_out": [

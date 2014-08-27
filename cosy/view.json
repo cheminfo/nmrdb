@@ -230,7 +230,7 @@
                     ]
                 }
             },
-            "id": 4,
+            "id": 3,
             "vars_in": [
                 {
                     "rel": "jcamp",
@@ -362,7 +362,7 @@
                             {
                                 "name": "auto",
                                 "destination": "data",
-                                "label": "Auto (COSY)",
+                                "label": "Auto (COSY) coupling",
                                 "defaultvalue": "true",
                                 "fieldtype": "checkbox"
                             },
@@ -386,9 +386,12 @@
                     ]
                 }
             },
-            "id": 5,
+            "id": 4,
             "vars_in": [
-                {}
+                {
+                    "rel": "vartrigger",
+                    "name": "molfile-ext"
+                }
             ],
             "actions_in": [
                 {}
@@ -616,7 +619,7 @@
                     ]
                 }
             },
-            "id": 6,
+            "id": 5,
             "vars_in": [
                 {
                     "rel": "jcamp",
@@ -728,7 +731,7 @@
                     ]
                 }
             },
-            "id": 8,
+            "id": 6,
             "vars_in": [
                 {
                     "rel": "value",
@@ -810,7 +813,7 @@
                     ]
                 }
             },
-            "id": 9,
+            "id": 7,
             "vars_in": [],
             "actions_in": {},
             "vars_out": [
@@ -908,7 +911,7 @@
                     ]
                 }
             },
-            "id": 10,
+            "id": 8,
             "vars_in": [],
             "actions_in": {},
             "vars_out": [
