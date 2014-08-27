@@ -710,7 +710,7 @@ define(['jquery',
                     return;
                 }
 
-                var configJson = urls['config'] || 'usr/config/default.json';
+                var configJson = urls['config'] || $('#ci-visualizer').attr('config') || 'usr/config/default.json';
 
                 $.getJSON(configJson, {}, function(cfgJson) {
 
@@ -740,6 +740,10 @@ define(['jquery',
                         ModuleFactory.setModules(cfgJson.modules);
                     }
 
+                    if(cfgJson.contextMenu) {
+                        API.setContextMenu(cfgJson.contextMenu);
+                    }
+
                     // Set the filters
                     API.setAllFilters(cfgJson.filters || []);
 
@@ -750,9 +754,8 @@ define(['jquery',
                         Context.init(document.getElementById('modules-grid'));
 
                         if (!API.isViewLocked()) {
-
                             Context.listen(Context.getRootDom(), [
-                                    ['<li class="ci-item-configureentrypoint" name="refresh"><a><span class="ui-icon ui-icon-key"></span>Global preferences</a></li>',
+                                    ['<li class="ci-item-configureentrypoint"><a><span class="ui-icon ui-icon-key"></span>Global preferences</a></li>',
                                         function() {
                                             configureEntryPoint();
                                         }]]
@@ -773,17 +776,17 @@ define(['jquery',
                         Versioning.setDataJSON({});
 
                         Versioning.setURLType(type);
-
+                        var $visualizer = $('#ci-visualizer');
                         var viewInfo = {
                             view: {
                                 urls: urls['views'],
                                 branch: urls['viewBranch'],
-                                url: urls['viewURL']
+                                url: urls['viewURL'] || $visualizer.attr('viewURL')
                             },
                             data: {
                                 urls: urls['results'],
                                 branch: urls['resultBranch'],
-                                url: urls['dataURL']
+                                url: urls['dataURL'] || $visualizer.attr('dataURL')
                             }
                         };
                         window.history.replaceState({type: "viewchange", value: viewInfo}, "");
