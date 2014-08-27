@@ -41,9 +41,14 @@
     <script>
         var elements = document.getElementsByClassName('epfl-logo');
         if(elements.length > 0) {
-            console.log('elements', elements);
             elements[0].onclick = function() {
-                console.log('click logo');
+                window.location.href="http://www.epfl.ch";
+            }
+        }
+        var elements = document.getElementsByClassName('univalle-logo');
+        if(elements.length > 0) {
+            elements[0].onclick = function() {
+                window.location.href="http://www.univalle.edu.co/english/";
             }
         }
     </script>

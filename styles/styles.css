@@ -285,18 +285,20 @@ td.menu {
     background: url(../images/epfl.svg) no-repeat;
     background-size: 115px;
     background-position:right;
-    width: 180px;
+    max-width: 180px;
+    cursor: pointer;
 }
 
 .univalle-logo {
     background: url(../images/univalle.jpg) no-repeat;
     background-size: 45px;
     background-position:center;
-    width: 150px;
+    max-width: 100px;
+    cursor: pointer;
 }
 
 .isic-links {
-    width:450px;
+    width:420px;
 }
 
 #breadcrumbs {
