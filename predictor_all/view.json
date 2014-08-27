@@ -40,7 +40,7 @@
                     },
                     "size": {
                         "width": 40.01818182468414,
-                        "height": 42.01818182468414
+                        "height": 41.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -976,7 +976,7 @@
                 "Default layer": {
                     "position": {
                         "left": 27,
-                        "top": 35
+                        "top": 33
                     },
                     "size": {
                         "width": 16,
@@ -1196,8 +1196,8 @@
             "layers": {
                 "Default layer": {
                     "position": {
-                        "left": 1,
-                        "top": 43
+                        "left": 23.998578453063963,
+                        "top": 41.99999847412109
                     },
                     "size": {
                         "width": 16.01818182468414,
@@ -1216,7 +1216,13 @@
                     ],
                     "wrapper": true,
                     "created": true,
-                    "name": "Default layer"
+                    "name": "Default layer",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ]
                 }
             },
             "id": 8,
@@ -1522,12 +1528,12 @@
             "layers": {
                 "Default layer": {
                     "position": {
-                        "left": 17.99857873916626,
-                        "top": 42.9985767364502
+                        "left": 40.99857845306396,
+                        "top": 0
                     },
                     "size": {
-                        "width": 22.01818182468414,
-                        "height": 29.01818182468414
+                        "width": 38.01818182468414,
+                        "height": 17.01818182468414
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1743,66 +1749,6 @@
             "actions_in": {},
             "actions_out": {},
             "zindex": 3
-        },
-        {
-            "url": "modules/types/display/postit/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "fontfamily": [
-                                "Post_IT"
-                            ],
-                            "editable": [
-                                []
-                            ]
-                        }
-                    ]
-                }
-            },
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 42,
-                        "top": 0
-                    },
-                    "size": {
-                        "width": 38,
-                        "height": 17
-                    },
-                    "zIndex": 0,
-                    "display": true,
-                    "title": "Untitled",
-                    "bgcolor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ]
-                }
-            },
-            "id": 15,
-            "vars_in": [],
-            "actions_in": {},
-            "title": "Untitled",
-            "text": "<p><strong>Simulate NMR, MS and more</strong></p>\n\n<p>Draw your molecule or drag and drop your molfile, click the button and prepare yourself to really understand your molecule.</p>\n\n<p>You can zoom and mouseover everywhere...</p>\n",
-            "zindex": 3,
-            "vars_out": [
-                {
-                    "jpath": []
-                }
-            ],
-            "actions_out": {}
         }
     ],
     "variables": [

@@ -578,66 +578,6 @@
             "actions_in": {},
             "actions_out": {},
             "zindex": 3
-        },
-        {
-            "url": "modules/types/display/postit/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "fontfamily": [
-                                "Post_IT"
-                            ],
-                            "editable": [
-                                []
-                            ]
-                        }
-                    ]
-                }
-            },
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 2,
-                        "top": 71
-                    },
-                    "size": {
-                        "width": 38,
-                        "height": 13
-                    },
-                    "zIndex": 0,
-                    "display": true,
-                    "title": "Untitled",
-                    "bgcolor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ]
-                }
-            },
-            "id": 6,
-            "vars_in": [],
-            "actions_in": {},
-            "title": "Untitled",
-            "text": "<p><strong>Simulate COSY</strong></p>\n\n<p>Draw your molecule or drag and drop your molfile</p>\n\n<p>You can zoom and mouseover everywhere...</p>\n",
-            "zindex": 3,
-            "vars_out": [
-                {
-                    "jpath": []
-                }
-            ],
-            "actions_out": {}
         }
     ],
     "variables": [
