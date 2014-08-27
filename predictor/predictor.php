@@ -7,38 +7,24 @@
 
 
             This page allows to predict the spectrum from the chemical structure based on "Spinus". You may find more information on the authors <a href="http://www2.chemie.uni-erlangen.de/services/spinus/index.html" target="_blank">website</a>.<p>
-
+                <br/>
                 <b>References</b><br>
-            <ul>
-                <li>
-                    Banfi, D.; Patiny, L. <a target="_blank" href="http://dx.doi.org/10.2533/chimia.2008.280">www.nmrdb.org: Resurrecting and processing NMR spectra on-line</a> <i>Chimia</i>, <b>2008</b>, <i>62</i>(4), 280-281.
-                </li>
-                <li>
-                    Aires-de-Sousa, M. Hemmer, J. Gasteiger, &#8220;<a target="_blank"
-                                                                       href="http://dx.doi.org/10.1021/ac010737m">Prediction
-                    of 1H NMR Chemical Shifts Using Neural Networks</a>&#8221;, <i>Analytical Chemistry</i>,
-                    <b>2002</b>, <i>74</i>(1), 80-90 most of the proton descriptors are
-                    explained. In that work they were used for the prediction of 1H NMR chemical
-                    shifts by counterpropagation neural networks.
-                <li>
-                    Y. Binev, J. Aires-de-Sousa,
-                    "<a target="_blank"
-                        href="http://dx.doi.org/10.1021/ci034228s">Structure-Based
-                    Predictions of 1H  NMR Chemical Shifts Using Feed-Forward Neural Networks</a>",
-                    <i>J. Chem.     Inf. Comp. Sci.</i>, <b>2004</b>,&nbsp;<span
-                        class="text"><i><span class="textitalics">44</span></i><span
-                        class="text">(3), 940-945 </span></span>the development of the FFNNs and
-                    the selection of descriptors is explained.
-                <li>
-                    Y. Binev, M. Corvo, J.
-                    Aires-de-Sousa, "<a target="_blank"
-                                        href="http://dx.doi.org/10.1021/ci034229k">The
-                    Impact of Available  Experimental Data on the Prediction of 1H NMR Chemical
-                    Shifts by Neural Networks</a>",      <i>J. Chem.     Inf. Comp. Sci.</i>,
-                    <b>2004</b>, <span class="text"><i><span class="textitalics">44</span></i><span
-                        class="text">(3), 946-949</span></span> the use of an additional memory
-                    is described. </p>
-            </ul>
+                            <ul>
+                                <li>
+                                    Banfi, D.; Patiny, L. <a target="_blank" href="http://dx.doi.org/10.2533/chimia.2008.280">www.nmrdb.org: Resurrecting and processing NMR spectra on-line</a> <i>Chimia</i>, <b>2008</b>, <i>62</i>(4), 280-281.
+                                </li>
+                                <li>
+                                    Andrés M. Castillo, Luc Patiny and Julien Wist. <a href="http://dx.doi.org/10.1016/j.jmr.2010.12.008">Fast and Accurate Algorithm for the Simulation of NMR spectra of Large Spin Systems.</a> <em>Journal of Magnetic Resonance</em> <strong>2011. </strong>
+                                </li>
+                                <li>
+                                    Aires-de-Sousa, M. Hemmer, J. Gasteiger, &#8220;<a target="_blank"
+                                                                                       href="http://dx.doi.org/10.1021/ac010737m">Prediction
+                                    of 1H NMR Chemical Shifts Using Neural Networks</a>&#8221;, <i>Analytical Chemistry</i>,
+                                    <b>2002</b>, <i>74</i>(1), 80-90 most of the proton descriptors are
+                                    explained. In that work they were used for the prediction of 1H NMR chemical
+                                    shifts by counterpropagation neural networks.
+                                </li>
+                            </ul>
 
 
 
