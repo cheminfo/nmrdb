@@ -5,25 +5,24 @@
     <title>nmrdb.org</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR Spectra prediction, NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
-    <!--#include virtual="../meta.html" -->
+    <?php include('../meta.html')?>
 </head>
 
 <body>
-
 <center>
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
             <td align="left" valign="top">
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" background="../images/rigla_sus.jpg" style="background-repeat:repeat-x; background-position:top">
-                    <!--#include virtual="../header.html" -->
-                    <!--#include virtual="../menu.html" -->
-                    <!--#include virtual="predictor.html" -->
-                    <!--#include virtual="../footer.html" -->
+					<?php include('../header.html')?>
+					<?php include('../menu.html')?>
+					<?php include('predictor.php')?>
+					<?php include('../../footer.html')?>
                 </table>
             </td>
         </tr>
     </table>
 </center>
-<!--#include virtual="../menuScript.html" -->
+<?php include('../menuScript.html')?>
 </body>
 </html>
