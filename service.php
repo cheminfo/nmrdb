@@ -14,11 +14,11 @@
     
     // docIDs for service views, indexed by service name
     var views = {
-      'all-predictions': './predictor_all/?viewURL=view.json&config=../config.json',
-	  'nmr-1h-prediction': './new_predictor/?viewURL=view.json&config=../config.json',
-	  'cosy-prediction': './cosy/?viewURL=view.json&config=../config.json',
-	  'hmbc-prediction': './hmbc/?viewURL=view.json&config=../config.json',
-	  'nmr-13c-prediction': './13c/?viewURL=view.json&config=../config.json'
+      'all-predictions': './predictor_all/',
+	  'nmr-1h-prediction': './new_predictor/',
+	  'cosy-prediction': './cosy/',
+	  'hmbc-prediction': './hmbc/',
+	  'nmr-13c-prediction': './13c/'
     };
     
     // Creating data object
