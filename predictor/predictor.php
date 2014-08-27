@@ -372,7 +372,7 @@ M  END
                 </textarea>
             </form>
 
-            <textarea id="transfered" rows=2 cols=20 style="display: none"></textarea>
+            <textarea id="transfered" rows=2 cols=20 style="display: none"><?php echo $_POST['molfile'] ?></textarea>
 
 
             <script language="javascript">
@@ -384,7 +384,9 @@ M  END
             <p>We thanks <a href="http://www.mol-net.com" target="_blank">Molecular Networks</a> for providing the predicting engine.</p>
 
             <script language="javascript">
-
+			document.nemo.onload = function() {
+				console.log('APPLET LOADED');
+			};
                 function setSmiles(smiles) {
                     if (initializeRequester()) {
                         requester.onreadystatechange = setMolfileFromWeb;
