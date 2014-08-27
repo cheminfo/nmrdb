@@ -4,7 +4,7 @@
         <div class="content">
             <h1 class="nmr">NMR resurrect</h1>
             <h2>
-                <a href="../new_predictor" style="font-size:16px; color: red;"><b>Try the new HTML5 only predictor that works also on iPad, Android, ... and does not require JAVA (only HTML5)!!!</b></a>
+                <a href="../new_predictor?viewURL=view.json&config=../config.json" style="font-size:16px; color: red;"><b>Try the new HTML5 only predictor that works also on iPad, Android, ... and does not require JAVA (only HTML5)!!!</b></a>
             </h2>
 
 
