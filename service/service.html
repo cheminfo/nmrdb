@@ -3,23 +3,36 @@
     <td colspan="3">
         <div class="content">
             <h1 class="nmr">Service</h1>
-            <h2>Add predictor on your own website</h2>
+            <h2>Add 1H NMR prediction on your own website</h2>
 
-            <p>Adding the NMR predicting tool on your website server is not only FREE but also very easy. Just add the following line in which the last parameter is the URL encoded SMILES code:</p>
+            <p>Adding the NMR predictions on your website server is not only FREE but also very easy. Just add the following line in which the last parameter is the URL encoded SMILES code:</p>
             <ul>
                 <li>Java applet predictor: <a href="../predictor?smiles=CCCC" target="_blank">http://www.nmrdb.org/predictor?smiles=CCCC</a></li>
-                <li>HTML5 predictor: <a href="../service.php?name=nmr-predictor&smiles=CCCC" target="_blank">http://www.nmrdb.org/service.php?name=nmr-predictor&smiles=CCCC</a></li>
+                <li>HTML5 1H predictor: <a href="../service.php?name=nmr-1h-prediction&smiles=CCCC" target="_blank">http://www.nmrdb.org/service.php?name=nmr-1h-prediction&smiles=CCCC</a></li>
             </ul>
 
-            <p>For example: <a href="../service.php?name=nmr-predictor&smiles=C14%28C%28C2%28CC%3DC3%28C%28C2CC1%29%28CCC%28O%29C3%29C%29%29%29CCC4C%28CCCC%28C%29C%29C%29%28C%29" mce_real_href="http://www.nmrdb.org/predictor?smiles=C14%28C%28C2%28CC%3DC3%28C%28C2CC1%29%28CCC%28O%29C3%29C%29%29%29CCC4C%28CCCC%28C%29C%29C%29%28C%29">NMR spectrum of cholesterol</a></p>
+            <h2>HTML5 compatible predictions on your own website</h2>
+
+            <p>If you want to link more services compatible with HTML5 you have the following services available</p>
+            <ul>
+                <li>1H NMR prediction: <a href="../service.php?name=nmr-1h-prediction&smiles=CCCC" target="_blank">http://www.nmrdb.org/service.php?name=nmr-1h-prediction&smiles=CCCC</a></li>
+                <li>13C NMR prediction: <a href="../service.php?name=nmr-13c-prediction&smiles=CCCC" target="_blank">http://www.nmrdb.org/service.php?name=nmr-13c-prediction&smiles=CCCC</a></li>
+                <li>COSY prediction: <a href="../service.php?name=cosy-prediction&smiles=CCCC" target="_blank">http://www.nmrdb.org/service.php?name=cosy-prediction&smiles=CCCC</a></li>
+                <li>HSQC/HMBC prediction: <a href="../service.php?name=hmbc-prediction&smiles=CCCC" target="_blank">http://www.nmrdb.org/service.php?name=hmbc-prediction&smiles=CCCC</a></li>
+                <li>All predictions: <a href="../service.php?name=all-predictions&smiles=CCCC" target="_blank">http://www.nmrdb.org/service.php?name=all-predictions&smiles=CCCC</a></li>
+            </ul>
+
+            <p>For example: <a href="../service.php?name=nmr-1h-prediction&smiles=C14%28C%28C2%28CC%3DC3%28C%28C2CC1%29%28CCC%28O%29C3%29C%29%29%29CCC4C%28CCCC%28C%29C%29C%29%28C%29">1H NMR spectrum of cholesterol</a></p>
+
+            <h2>Molfile based webservices</h2>
 
             <p>You can also directly submit a molfile, check the source code of this page to see how easy it is!</p>
             <table id="forms">
                 <tr>
                     <td>
                         <form id="form_new" method="post" action="../service.php">
-                            <h4>HTML5 predictor</h4>
-                            <input type="hidden" name="name" value="nmr-predictor" id="name">
+                            <h4>HTML5 1H NMR prediction</h4>
+                            <input type="hidden" name="name" value="nmr-1h-prediction" id="name">
                             <textarea form="form_new" cols=60 rows=5 name="molfile" id="molfile">Ethylvinylether.mol
   FromForm
 
