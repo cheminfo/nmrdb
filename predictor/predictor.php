@@ -3,7 +3,9 @@
     <td colspan="3">
         <div class="content">
             <h1 class="nmr">NMR resurrect</h1>
-            <h2><a href="http://www.nmrdb.org/new_predictor" style="font-size:16px !important; color: red !important; pointer-events: none"><b>Try the new HTML5 only predictor that works also on iPad, Android, ... and does not require JAVA (only HTML5)!!!</b></a></h2>
+            <h2>
+                <a href="../new_predictor" style="font-size:16px; color: red;"><b>Try the new HTML5 only predictor that works also on iPad, Android, ... and does not require JAVA (only HTML5)!!!</b></a>
+            </h2>
 
 
             This page allows to predict the spectrum from the chemical structure based on "Spinus". You may find more information on the authors <a href="http://www2.chemie.uni-erlangen.de/services/spinus/index.html" target="_blank">website</a>.<p>
