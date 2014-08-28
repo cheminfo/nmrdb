@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>nmrdb.org</title>
+    <title>Predict 1H proton NMR spectra</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR Spectra prediction, NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
      <meta name="description" content="Predict 1H proton NMR spectra directly from your webbrowser using standard HTML5.">

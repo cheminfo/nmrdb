@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>nmrdb.org</title>
+    <title>HMBC, HSQC NMR prediction</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR prediction, HMBC Prediction, HSQC Prediction, Nuclear magnetic resonance">
     <meta name="description" content="Simulate and predict two-dimensional HSQC and HMBC proton-carbon 1H 13C NMR spectra directly from your webbrowser using standard HTML5.">

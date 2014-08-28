@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>nmrdb.org</title>
+    <title>Resurect spectra from inline experimental part assignment</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR resurrector, Nuclear magnetic resonance, experimental part">
     <meta name="description" content="Recreate (resurect) 1H and 13C NMR spectra from the inline assignment from a publication experimental part.">
