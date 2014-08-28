@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>nmrdb.org</title>
+    <title>Predict NMR spectra and isotopic distribution</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR prediction, COSY prediction, HMBC Prediction, HSQC Prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
     <!--#include virtual="../meta.html" -->
