@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>nmrdb.org</title>
     <meta name="keywords" content="NMR prediction, Nuclear magnetic resonance, Web service">
-    <!--#include virtual="../meta.html" -->
+    <meta name="description" content="Link your website to predicted 1H, 13C, COSY, HSQC, HMBC NMR spectra from a SMILES or molfile.">
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
 </head>
 

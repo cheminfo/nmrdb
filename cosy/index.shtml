@@ -5,7 +5,8 @@
     <title>nmrdb.org</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="COSY prediction, NMR prediction, Nuclear magnetic resonance">
-    <!--#include virtual="../meta.html" -->
+    <meta name="description" content="Simulate and predict two-dimensional COSY proton-proton 1H NMR spectra directly from your webbrowser using standard HTML5.">
+
     <!--#include virtual="../visualizer-head.html" -->
 </head>
 

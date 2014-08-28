@@ -5,7 +5,7 @@
     <title>nmrdb.org</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR Spectra prediction, NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
-    <?php include('../meta.html')?>
+     <meta name="description" content="Predict 1H proton NMR spectra directly from your webbrowser using standard HTML5.">
 </head>
 
 <body>

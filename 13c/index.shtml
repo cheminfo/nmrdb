@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>nmrdb.org</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
-    <meta name="keywords" content="NMR Spectra Prediction, NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
-    <!--#include virtual="../meta.html" -->
+    <meta name="keywords" content="NMR Spectra Prediction, 13C NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
+    <meta name="description" content="Predict 13C carbon NMR spectra directly from your webbrowser using standard HTML5.">
     <!--#include virtual="../visualizer-head.html" -->
 </head>
 

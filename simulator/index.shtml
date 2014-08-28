@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>nmrdb.org</title>
     <meta name="keywords" content="NMR simulator, Nuclear magnetic resonance, AB, ABX, AA'XX', Second order effect">
-    <!--#include virtual="../meta.html" -->
+    <meta name="description" content="Simulate NMR spectra directly from your webbrowser using standard HTML5 and predict second-order effect.">
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
 
     <!--#include virtual="../visualizer-head.html" -->
