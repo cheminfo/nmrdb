@@ -8,7 +8,7 @@
         "xWidth": 10,
         "yHeight": 10
     },
-    "version": "2.4.1",
+    "version": "2.4.2",
     "modules": [
         {
             "url": "modules/types/science/chemistry/jsme/",
@@ -39,20 +39,12 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 40.01818182468414,
-                        "height": 41.01818182468414
+                        "width": 40.039999997615816,
+                        "height": 41.039999997615816
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "Molecule",
-                    "bgcolor": [
-                        [
-                            255,
-                            255,
-                            255,
-                            0
-                        ]
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -197,27 +189,27 @@
             "layers": {
                 "Default layer": {
                     "position": {
-                        "left": 40.999997806549075,
-                        "top": 17.9985782623291
+                        "left": 80.0000011920929,
+                        "top": 0
                     },
                     "size": {
-                        "width": 38.01818182468414,
-                        "height": 21.01818182468414
+                        "width": 38.039999997615816,
+                        "height": 21.039999997615816
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "1H-NMR spectrum",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 2,
@@ -360,27 +352,27 @@
             "layers": {
                 "Default layer": {
                     "position": {
-                        "left": 79.99999780654908,
-                        "top": 0
+                        "left": 80.0000011920929,
+                        "top": 22
                     },
                     "size": {
-                        "width": 38.01818182468414,
-                        "height": 17.01818182468414
+                        "width": 38.039999997615816,
+                        "height": 17.039999997615816
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "13C-NMR spectrum",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 3,
@@ -522,27 +514,27 @@
             "layers": {
                 "Default layer": {
                     "position": {
-                        "left": 79.99999780654908,
-                        "top": 17.9985782623291
+                        "left": 0,
+                        "top": 42.00000057220459
                     },
                     "size": {
-                        "width": 38.01818182468414,
-                        "height": 21.01818182468414
+                        "width": 40.039999997615816,
+                        "height": 21.039999997615816
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "MS",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 4,
@@ -687,23 +679,23 @@
                         "top": 39.99999885559082
                     },
                     "size": {
-                        "width": 38.01818182468414,
-                        "height": 33.01818182468414
+                        "width": 38.039999997615816,
+                        "height": 33.039999997615816
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "COSY (1,2,3 J in yellow,  4J in blue)",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 5,
@@ -848,27 +840,27 @@
             "layers": {
                 "Default layer": {
                     "position": {
-                        "left": 79.99999780654908,
-                        "top": 39.99999885559082
+                        "left": 80.0000011920929,
+                        "top": 39.99875030517578
                     },
                     "size": {
-                        "width": 38.01818182468414,
-                        "height": 33.01818182468414
+                        "width": 38.039999997615816,
+                        "height": 33.039999997615816
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "HMBC (1 red, 2-3 yellow, 4 blue) ",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 6,
@@ -985,14 +977,6 @@
                     "zIndex": 0,
                     "display": true,
                     "title": "Click me",
-                    "bgcolor": [
-                        [
-                            255,
-                            255,
-                            255,
-                            0
-                        ]
-                    ],
                     "wrapper": false,
                     "created": true,
                     "name": "Default layer",
@@ -1196,24 +1180,16 @@
             "layers": {
                 "Default layer": {
                     "position": {
-                        "left": 23.998578453063963,
-                        "top": 41.99999847412109
+                        "left": 41.000001192092896,
+                        "top": 74.0000036239624
                     },
                     "size": {
-                        "width": 16.01818182468414,
-                        "height": 7.018181824684143
+                        "width": 17.039999997615816,
+                        "height": 5.039999997615814
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "Log",
-                    "bgcolor": [
-                        [
-                            255,
-                            255,
-                            255,
-                            0
-                        ]
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -1283,23 +1259,23 @@
                         "top": 14
                     },
                     "size": {
-                        "width": 15.018181824684143,
-                        "height": 13.018181824684143
+                        "width": 14.939999997615814,
+                        "height": 13.039999997615814
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "COSY",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 9,
@@ -1374,23 +1350,23 @@
                         "top": 28
                     },
                     "size": {
-                        "width": 15.018181824684143,
-                        "height": 13.018181824684143
+                        "width": 14.939999997615814,
+                        "height": 13.039999997615814
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "HMBC/HSQC",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 10,
@@ -1465,23 +1441,23 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 15.018181824684143,
-                        "height": 13.018181824684143
+                        "width": 14.939999997615814,
+                        "height": 13.039999997615814
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "1H-NMR",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 11,
@@ -1528,27 +1504,27 @@
             "layers": {
                 "Default layer": {
                     "position": {
-                        "left": 40.99857845306396,
-                        "top": 0
+                        "left": 0,
+                        "top": 64.0000036239624
                     },
                     "size": {
-                        "width": 38.01818182468414,
-                        "height": 17.01818182468414
+                        "width": 40.039999997615816,
+                        "height": 13.039999997615814
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "Molecular information",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 12,
@@ -1613,23 +1589,23 @@
                         "top": 56
                     },
                     "size": {
-                        "width": 15.018181824684143,
-                        "height": 13.018181824684143
+                        "width": 14.939999997615814,
+                        "height": 13.039999997615814
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "13C-NMR",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 13,
@@ -1704,23 +1680,23 @@
                         "top": 42
                     },
                     "size": {
-                        "width": 15.018181824684143,
-                        "height": 13.018181824684143
+                        "width": 14.939999997615814,
+                        "height": 13.039999997615814
                     },
                     "zIndex": 0,
                     "display": true,
                     "title": "MS",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "id": 14,
@@ -1749,6 +1725,76 @@
             "actions_in": {},
             "actions_out": {},
             "zindex": 3
+        },
+        {
+            "url": "modules/types/science/chemistry/jsme/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "prefs": [
+                                [
+                                    "depict"
+                                ]
+                            ],
+                            "labelsize": [
+                                14
+                            ],
+                            "bondwidth": [
+                                1
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 41.000001192092896,
+                        "top": 0
+                    },
+                    "size": {
+                        "width": 38.039999997615816,
+                        "height": 39.039999997615816
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Molecule",
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ]
+                }
+            },
+            "id": 15,
+            "vars_in": [
+                {
+                    "rel": "mol",
+                    "name": "molfile-hydrogen"
+                },
+                {
+                    "rel": "jme",
+                    "name": "jme"
+                }
+            ],
+            "actions_in": {},
+            "title": "Molecule",
+            "vars_out": [
+                {
+                    "event": "onStructureChange",
+                    "rel": "mol",
+                    "jpath": [],
+                    "name": "molfile"
+                }
+            ],
+            "actions_out": {},
+            "zindex": 1
         }
     ],
     "variables": [
