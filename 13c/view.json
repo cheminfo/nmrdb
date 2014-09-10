@@ -48,17 +48,11 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 34
+                        "width": 37.039999997615816,
+                        "height": 34.039999997615816
                     },
                     "display": true,
                     "title": "Draw a chemical structure to predict",
-                    "bgcolor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -117,17 +111,11 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 34
+                        "width": 37.039999997615816,
+                        "height": 34.039999997615816
                     },
                     "display": true,
                     "title": "Chemical structure with hydrogen exploded",
-                    "bgcolor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -218,17 +206,11 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33,
-                        "height": 22
+                        "width": 33.039999997615816,
+                        "height": 22.039999997615816
                     },
                     "display": true,
                     "title": "NMRshiftDB predicted chemical shifts",
-                    "bgcolor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -306,20 +288,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33,
-                        "height": 11
+                        "width": 33.039999997615816,
+                        "height": 10.939999997615814
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Superimpose exp. spectrum"
@@ -454,10 +436,14 @@
                 {}
             ],
             "vars_out": [
-                {}
+                {
+                    "jpath": []
+                }
             ],
             "actions_out": [
-                {}
+                {
+                    "jpath": []
+                }
             ],
             "zindex": 1,
             "layers": {
@@ -468,23 +454,23 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 109,
-                        "height": 31
+                        "width": 109.03999999761581,
+                        "height": 31.039999997615816
                     },
                     "display": true,
-                    "title": "Untitled module",
-                    "bgcolor": [
+                    "title": "13C NMR spectra",
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
-            "title": "Untitled module"
+            "title": "13C NMR spectra"
         },
         {
             "url": "modules/types/server_interaction/webservice_search/",
@@ -628,12 +614,6 @@
                     },
                     "display": true,
                     "title": "Untitled module",
-                    "bgcolor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
                     "wrapper": false,
                     "created": true,
                     "name": "Default layer",
@@ -646,6 +626,57 @@
                 }
             },
             "title": "Untitled module"
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'13C.jdx','application/jcamp-dx','{{ nmrSpectrum|url_encode }}')\">\n    <font color=\"red\"><b>Download 13C.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 98,
+                        "top": 37
+                    },
+                    "size": {
+                        "width": 11,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 7,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "nmrSpectrum"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {},
+            "zindex": 7
         }
     ],
     "variables": [
@@ -659,7 +690,7 @@
     "configuration": {
         "title": "Predict NMR spectra"
     },
-    "version": "2.4.1",
+    "version": "2.4.2",
     "pouchvariables": [
         {}
     ],

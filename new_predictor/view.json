@@ -48,8 +48,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37.039999997615816,
-                        "height": 34.039999997615816
+                        "width": 37,
+                        "height": 34
                     },
                     "display": true,
                     "title": "Draw a chemical structure to predict",
@@ -103,8 +103,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 36.939999997615814,
-                        "height": 34.039999997615816
+                        "width": 37,
+                        "height": 34
                     },
                     "display": true,
                     "title": "Chemical structure with hydrogen exploded",
@@ -204,8 +204,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 28.939999997615814,
-                        "height": 26.039999997615816
+                        "width": 29,
+                        "height": 26
                     },
                     "display": true,
                     "title": "Spinus predicted chemical shifts",
@@ -286,8 +286,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 62.939999997615814,
-                        "height": 8.039999997615814
+                        "width": 63,
+                        "height": 8
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum",
@@ -366,8 +366,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 32.939999997615814,
-                        "height": 26.039999997615816
+                        "width": 33,
+                        "height": 26
                     },
                     "display": true,
                     "title": "J (Hz)",
@@ -532,8 +532,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 138.0399999976158,
-                        "height": 30.939999997615814
+                        "width": 138,
+                        "height": 31
                     },
                     "display": true,
                     "title": "1H NMR spectra",
@@ -696,39 +696,6 @@
                 }
             },
             "title": "Untitled module"
-        },
-        {
-            "url": "modules/types/display/template-twig/",
-            "configuration": {},
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 59,
-                        "top": 98
-                    },
-                    "size": {
-                        "width": 34.939999997615814,
-                        "height": 22.039999997615816
-                    },
-                    "zIndex": 0,
-                    "display": true,
-                    "title": "Untitled",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
-                }
-            },
-            "id": 8,
-            "vars_in": [],
-            "actions_in": {},
-            "title": "Untitled",
-            "zindex": 0
         },
         {
             "url": "modules/types/display/template-twig/",

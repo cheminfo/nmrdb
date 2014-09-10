@@ -39,8 +39,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 40.039999997615816,
-                        "height": 41.039999997615816
+                        "width": 40,
+                        "height": 41
                     },
                     "zIndex": 0,
                     "display": true,
@@ -74,7 +74,7 @@
                 }
             ],
             "actions_out": {},
-            "zindex": 1
+            "zindex": 0
         },
         {
             "url": "modules/types/science/spectra/spectra_displayer/",
@@ -193,8 +193,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 38.039999997615816,
-                        "height": 21.039999997615816
+                        "width": 38,
+                        "height": 21
                     },
                     "zIndex": 0,
                     "display": true,
@@ -237,7 +237,7 @@
             "actions_out": [
                 {}
             ],
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/science/spectra/spectra_displayer/",
@@ -356,8 +356,8 @@
                         "top": 22
                     },
                     "size": {
-                        "width": 38.039999997615816,
-                        "height": 17.039999997615816
+                        "width": 38,
+                        "height": 17
                     },
                     "zIndex": 0,
                     "display": true,
@@ -400,7 +400,7 @@
             "actions_out": [
                 {}
             ],
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/science/spectra/spectra_displayer/",
@@ -518,8 +518,8 @@
                         "top": 42.00000057220459
                     },
                     "size": {
-                        "width": 40.039999997615816,
-                        "height": 21.039999997615816
+                        "width": 40,
+                        "height": 21
                     },
                     "zIndex": 0,
                     "display": true,
@@ -558,7 +558,7 @@
             "actions_out": [
                 {}
             ],
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/science/spectra/spectra_displayer/",
@@ -679,8 +679,8 @@
                         "top": 39.99999885559082
                     },
                     "size": {
-                        "width": 38.039999997615816,
-                        "height": 33.039999997615816
+                        "width": 38,
+                        "height": 33
                     },
                     "zIndex": 0,
                     "display": true,
@@ -723,7 +723,7 @@
             "actions_out": [
                 {}
             ],
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/science/spectra/spectra_displayer/",
@@ -844,8 +844,8 @@
                         "top": 39.99875030517578
                     },
                     "size": {
-                        "width": 38.039999997615816,
-                        "height": 33.039999997615816
+                        "width": 38,
+                        "height": 33
                     },
                     "zIndex": 0,
                     "display": true,
@@ -888,7 +888,7 @@
             "actions_out": [
                 {}
             ],
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/server_interaction/webservice_search/",
@@ -1132,7 +1132,7 @@
                     "jpath": []
                 }
             ],
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/display/single_value/",
@@ -1184,8 +1184,8 @@
                         "top": 74.0000036239624
                     },
                     "size": {
-                        "width": 17.039999997615816,
-                        "height": 5.039999997615814
+                        "width": 17,
+                        "height": 5
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1212,7 +1212,7 @@
             "title": "Log",
             "vars_out": {},
             "actions_out": {},
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/client_interaction/dragdrop/",
@@ -1259,8 +1259,8 @@
                         "top": 14
                     },
                     "size": {
-                        "width": 14.939999997615814,
-                        "height": 13.039999997615814
+                        "width": 15,
+                        "height": 13
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1303,7 +1303,7 @@
             ],
             "actions_in": {},
             "actions_out": {},
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/client_interaction/dragdrop/",
@@ -1350,8 +1350,8 @@
                         "top": 28
                     },
                     "size": {
-                        "width": 14.939999997615814,
-                        "height": 13.039999997615814
+                        "width": 15,
+                        "height": 13
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1394,7 +1394,7 @@
             ],
             "actions_in": {},
             "actions_out": {},
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/client_interaction/dragdrop/",
@@ -1441,8 +1441,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 14.939999997615814,
-                        "height": 13.039999997615814
+                        "width": 15,
+                        "height": 13
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1485,7 +1485,7 @@
             ],
             "actions_in": {},
             "actions_out": {},
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/display/template-twig/",
@@ -1508,8 +1508,8 @@
                         "top": 64.0000036239624
                     },
                     "size": {
-                        "width": 40.039999997615816,
-                        "height": 13.039999997615814
+                        "width": 40,
+                        "height": 13
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1542,7 +1542,7 @@
             "title": "Molecular information",
             "vars_out": {},
             "actions_out": {},
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/client_interaction/dragdrop/",
@@ -1589,8 +1589,8 @@
                         "top": 56
                     },
                     "size": {
-                        "width": 14.939999997615814,
-                        "height": 13.039999997615814
+                        "width": 15,
+                        "height": 13
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1633,7 +1633,7 @@
             ],
             "actions_in": {},
             "actions_out": {},
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/client_interaction/dragdrop/",
@@ -1680,8 +1680,8 @@
                         "top": 42
                     },
                     "size": {
-                        "width": 14.939999997615814,
-                        "height": 13.039999997615814
+                        "width": 15,
+                        "height": 13
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1724,7 +1724,7 @@
             ],
             "actions_in": {},
             "actions_out": {},
-            "zindex": 3
+            "zindex": 2
         },
         {
             "url": "modules/types/science/chemistry/jsme/",
@@ -1755,8 +1755,8 @@
                         "top": 0
                     },
                     "size": {
-                        "width": 38.039999997615816,
-                        "height": 39.039999997615816
+                        "width": 38,
+                        "height": 39
                     },
                     "zIndex": 0,
                     "display": true,
@@ -1794,7 +1794,262 @@
                 }
             ],
             "actions_out": {},
-            "zindex": 1
+            "zindex": 0
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'COSY.jdx','application/jcamp-dx','{{ cosy|url_encode }}')\">\n    <font color=\"red\"><b>Download COSY.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 68,
+                        "top": 41
+                    },
+                    "size": {
+                        "width": 13,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 16,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "cosy"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {},
+            "zindex": 16
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'HMBC.jdx','application/jcamp-dx','{{ hmbc|url_encode }}')\">\n    <font color=\"red\"><b>Download HMBC.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 106,
+                        "top": 41
+                    },
+                    "size": {
+                        "width": 13,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 17,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "hmbc"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {},
+            "zindex": 16
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1H.jdx','application/jcamp-dx','{{ jcamp1H|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 108,
+                        "top": 1
+                    },
+                    "size": {
+                        "width": 13,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 18,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "jcamp1H"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {},
+            "zindex": 16
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'13C.jdx','application/jcamp-dx','{{ jcamp13C|url_encode }}')\">\n    <font color=\"red\"><b>Download 13C.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 107,
+                        "top": 23
+                    },
+                    "size": {
+                        "width": 13,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 19,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "jcamp13C"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {},
+            "zindex": 16
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'ms.jdx','application/jcamp-dx','{{ ms|url_encode }}')\">\n    <font color=\"red\"><b>Download ms.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 29,
+                        "top": 43
+                    },
+                    "size": {
+                        "width": 13,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 20,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "ms"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {},
+            "zindex": 16
         }
     ],
     "variables": [

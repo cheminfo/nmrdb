@@ -275,17 +275,17 @@
                     },
                     "display": true,
                     "title": "first dimension",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "first dimension"
@@ -477,14 +477,6 @@
                     },
                     "display": true,
                     "title": "Simulation parameters",
-                    "bgcolor": [
-                        [
-                            255,
-                            255,
-                            255,
-                            0
-                        ]
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -655,17 +647,17 @@
                     },
                     "display": true,
                     "title": "Predicted 2D pattern. In red, 1 bound paths(HSQC signals)",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         [
                             255,
                             255,
                             255,
                             0
                         ]
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Predicted 2D pattern. In red, 1 bound paths(HSQC signals)"
@@ -747,14 +739,6 @@
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum 1D",
-                    "bgcolor": [
-                        [
-                            255,
-                            255,
-                            255,
-                            0
-                        ]
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -834,15 +818,15 @@
                     },
                     "display": true,
                     "title": "Log",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Log"
@@ -924,14 +908,6 @@
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum 2D",
-                    "bgcolor": [
-                        [
-                            255,
-                            255,
-                            255,
-                            0
-                        ]
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -944,6 +920,106 @@
                 }
             },
             "title": "Superimpose exp. spectrum 2D"
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1H.jdx','application/jcamp-dx','{{ jcamp1|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 120,
+                        "top": 1
+                    },
+                    "size": {
+                        "width": 16,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 9,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "jcamp1"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {}
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'HMBC.jdx','application/jcamp-dx','{{ jcamp2D|url_encode }}')\">\n    <font color=\"red\"><b>Download HMBC.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 119,
+                        "top": 21
+                    },
+                    "size": {
+                        "width": 16,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 10,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "jcamp2D"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {}
         }
     ],
     "variables": [
@@ -999,7 +1075,7 @@
     "configuration": {
         "title": "Predict NMR spectra-HMBC"
     },
-    "version": "2.4.1",
+    "version": "2.4.2",
     "pouchvariables": [
         {}
     ],
