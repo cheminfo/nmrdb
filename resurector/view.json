@@ -88,20 +88,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 36.01818182468414,
-                        "height": 32.01818182468414
+                        "width": 36,
+                        "height": 32
                     },
                     "display": true,
                     "title": "In-line NMR description",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "In-line NMR description"
@@ -247,20 +247,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 70.01818182468415,
-                        "height": 50.01818182468414
+                        "width": 70,
+                        "height": 50
                     },
                     "display": true,
                     "title": "Resurrected NMR spectrum",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Resurrected NMR spectrum"
@@ -329,23 +329,73 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 36.01818182468414,
-                        "height": 17.01818182468414
+                        "width": 36,
+                        "height": 17
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ]
+                }
+            },
+            "title": "Superimpose exp. spectrum"
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1H.jdx','application/jcamp-dx','{{ jcamp|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 98,
+                        "top": 1
+                    },
+                    "size": {
+                        "width": 13,
+                        "height": 3
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
                     ],
-                    "wrapper": true,
+                    "wrapper": false,
                     "created": true,
                     "name": "Default layer"
                 }
             },
-            "title": "Superimpose exp. spectrum"
+            "id": 4,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "jcamp"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {}
         }
     ],
     "variables": [
@@ -359,7 +409,7 @@
     "configuration": {
         "title": "Resurrect NMR spectrum"
     },
-    "version": "2.4.1",
+    "version": "2.4.2",
     "pouchvariables": [],
     "grid": {
         "layers": {

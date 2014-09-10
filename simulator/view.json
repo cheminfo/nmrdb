@@ -143,20 +143,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 67.01818182468415,
-                        "height": 48.01818182468414
+                        "width": 67,
+                        "height": 48
                     },
                     "display": true,
                     "title": "Simulated spectrum",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Simulated spectrum"
@@ -214,20 +214,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 42.01818182468414,
-                        "height": 29.01818182468414
+                        "width": 42,
+                        "height": 29
                     },
                     "display": true,
                     "title": "Describe your spin system",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Describe your spin system"
@@ -270,7 +270,7 @@
                     ]
                 }
             },
-            "id": 4,
+            "id": 3,
             "vars_in": [],
             "actions_in": {},
             "vars_out": [
@@ -296,23 +296,73 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 42.01818182468414,
-                        "height": 18.01818182468414
+                        "width": 42,
+                        "height": 18
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ]
+                }
+            },
+            "title": "Superimpose exp. spectrum"
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1H.jdx','application/jcamp-dx','{{ jcamp|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 100,
+                        "top": 1
+                    },
+                    "size": {
+                        "width": 13,
+                        "height": 3
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
                     ],
-                    "wrapper": true,
+                    "wrapper": false,
                     "created": true,
                     "name": "Default layer"
                 }
             },
-            "title": "Superimpose exp. spectrum"
+            "id": 4,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "jcamp"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {}
         }
     ],
     "variables": [
@@ -326,7 +376,7 @@
     "configuration": {
         "title": "Simulate NMR spin system"
     },
-    "version": "2.4.1",
+    "version": "2.4.2",
     "pouchvariables": [],
     "grid": {
         "layers": {
