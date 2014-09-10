@@ -39,7 +39,7 @@
                 }
             ],
             "actions_out": {},
-            "zindex": 1,
+            "zindex": 0,
             "layers": {
                 "Default layer": {
                     "position": {
@@ -48,17 +48,11 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37.01818182468414,
-                        "height": 34.01818182468414
+                        "width": 37.039999997615816,
+                        "height": 34.039999997615816
                     },
                     "display": true,
                     "title": "Draw a chemical structure to predict",
-                    "bgcolor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -100,7 +94,7 @@
                 {}
             ],
             "actions_out": {},
-            "zindex": 1,
+            "zindex": 0,
             "layers": {
                 "Default layer": {
                     "position": {
@@ -109,20 +103,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37.01818182468414,
-                        "height": 34.01818182468414
+                        "width": 36.939999997615814,
+                        "height": 34.039999997615816
                     },
                     "display": true,
                     "title": "Chemical structure with hydrogen exploded",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Chemical structure with hydrogen exploded"
@@ -188,7 +182,7 @@
             "actions_in": [
                 {}
             ],
-            "zindex": 1,
+            "zindex": 0,
             "vars_out": [
                 {
                     "event": "onHover",
@@ -210,20 +204,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 29.01818182468414,
-                        "height": 26.01818182468414
+                        "width": 28.939999997615814,
+                        "height": 26.039999997615816
                     },
                     "display": true,
                     "title": "Spinus predicted chemical shifts",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Spinus predicted chemical shifts"
@@ -283,7 +277,7 @@
             "actions_out": [
                 {}
             ],
-            "zindex": 4,
+            "zindex": 3,
             "layers": {
                 "Default layer": {
                     "position": {
@@ -292,20 +286,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 63.01818182468414,
-                        "height": 8.018181824684143
+                        "width": 62.939999997615814,
+                        "height": 8.039999997615814
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Superimpose exp. spectrum"
@@ -353,7 +347,7 @@
             "actions_in": [
                 {}
             ],
-            "zindex": 1,
+            "zindex": 0,
             "vars_out": [
                 {}
             ],
@@ -368,20 +362,20 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33.01818182468414,
-                        "height": 26.01818182468414
+                        "width": 32.939999997615814,
+                        "height": 26.039999997615816
                     },
                     "display": true,
                     "title": "J",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "J"
@@ -521,29 +515,29 @@
             "actions_out": [
                 {}
             ],
-            "zindex": 1,
+            "zindex": 0,
             "layers": {
                 "Default layer": {
                     "position": {
                         "left": 0,
-                        "top": 35,
+                        "top": 35.00000152587891,
                         "right": 0
                     },
                     "size": {
-                        "width": 138.01818182468415,
-                        "height": 31.01818182468414
+                        "width": 138.0399999976158,
+                        "height": 30.939999997615814
                     },
                     "display": true,
                     "title": "Untitled module",
-                    "bgcolor": [
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer",
+                    "bgColor": [
                         255,
                         255,
                         255,
                         0
-                    ],
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer"
+                    ]
                 }
             },
             "title": "Untitled module"
@@ -668,7 +662,7 @@
                     "jpath": []
                 }
             ],
-            "zindex": 8,
+            "zindex": 7,
             "layers": {
                 "Default layer": {
                     "position": {
@@ -682,12 +676,6 @@
                     },
                     "display": true,
                     "title": "Untitled module",
-                    "bgcolor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
                     "wrapper": false,
                     "created": true,
                     "name": "Default layer",
@@ -700,6 +688,90 @@
                 }
             },
             "title": "Untitled module"
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {},
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 59,
+                        "top": 98
+                    },
+                    "size": {
+                        "width": 34.939999997615814,
+                        "height": 22.039999997615816
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": true,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 8,
+            "vars_in": [],
+            "actions_in": {},
+            "title": "Untitled",
+            "zindex": 0
+        },
+        {
+            "url": "modules/types/display/template-twig/",
+            "configuration": {
+                "sections": {},
+                "groups": {
+                    "group": [
+                        {
+                            "template": [
+                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1h.jdx','application/jcamp-dx','{{ nmrSpectrum|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "layers": {
+                "Default layer": {
+                    "position": {
+                        "left": 128,
+                        "top": 36
+                    },
+                    "size": {
+                        "width": 11,
+                        "height": 4
+                    },
+                    "zIndex": 0,
+                    "display": true,
+                    "title": "Untitled",
+                    "bgColor": [
+                        255,
+                        255,
+                        255,
+                        0
+                    ],
+                    "wrapper": false,
+                    "created": true,
+                    "name": "Default layer"
+                }
+            },
+            "id": 9,
+            "vars_in": [
+                {
+                    "rel": "value",
+                    "name": "nmrSpectrum"
+                }
+            ],
+            "actions_in": {},
+            "title": "Untitled",
+            "vars_out": {},
+            "actions_out": {},
+            "zindex": 9
         }
     ],
     "variables": [
@@ -713,7 +785,7 @@
     "configuration": {
         "title": "Predict NMR spectra"
     },
-    "version": "2.4.1",
+    "version": "2.4.2",
     "pouchvariables": [
         {}
     ],
