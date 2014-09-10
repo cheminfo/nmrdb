@@ -349,10 +349,14 @@
             ],
             "zindex": 0,
             "vars_out": [
-                {}
+                {
+                    "jpath": []
+                }
             ],
             "actions_out": [
-                {}
+                {
+                    "jpath": []
+                }
             ],
             "layers": {
                 "Default layer": {
@@ -366,7 +370,7 @@
                         "height": 26.039999997615816
                     },
                     "display": true,
-                    "title": "J",
+                    "title": "J (Hz)",
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -378,7 +382,7 @@
                     ]
                 }
             },
-            "title": "J"
+            "title": "J (Hz)"
         },
         {
             "url": "modules/types/science/spectra/spectra_displayer/",
@@ -510,10 +514,14 @@
                 {}
             ],
             "vars_out": [
-                {}
+                {
+                    "jpath": []
+                }
             ],
             "actions_out": [
-                {}
+                {
+                    "jpath": []
+                }
             ],
             "zindex": 0,
             "layers": {
@@ -528,7 +536,7 @@
                         "height": 30.939999997615814
                     },
                     "display": true,
-                    "title": "Untitled module",
+                    "title": "1H NMR spectra",
                     "wrapper": true,
                     "created": true,
                     "name": "Default layer",
@@ -540,7 +548,7 @@
                     ]
                 }
             },
-            "title": "Untitled module"
+            "title": "1H NMR spectra"
         },
         {
             "url": "modules/types/server_interaction/webservice_search/",
