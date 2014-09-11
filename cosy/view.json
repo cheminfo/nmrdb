@@ -47,8 +47,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 36
+                        "width": 36.96666666269302,
+                        "height": 35.96666666269302
                     },
                     "display": true,
                     "title": "Draw a chemical structure to predict",
@@ -108,8 +108,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 34,
-                        "height": 32
+                        "width": 33.96666666269302,
+                        "height": 31.966666662693022
                     },
                     "display": true,
                     "title": "Chemical structure with hydrogen exploded",
@@ -273,8 +273,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 58,
-                        "height": 19
+                        "width": 57.96666666269302,
+                        "height": 18.966666662693022
                     },
                     "display": true,
                     "title": "1H NMR spectrum",
@@ -473,8 +473,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 17
+                        "width": 36.96666666269302,
+                        "height": 16.966666662693022
                     },
                     "display": true,
                     "title": "Simulation parameters",
@@ -646,8 +646,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 58,
-                        "height": 46
+                        "width": 57.96666666269302,
+                        "height": 45.96666666269302
                     },
                     "display": true,
                     "title": "2D COSY NMR predicted spectrum - in red 4J coupling",
@@ -725,8 +725,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 9
+                        "width": 36.96666666269302,
+                        "height": 8.966666662693024
                     },
                     "display": true,
                     "title": "Log",
@@ -751,7 +751,7 @@
                     "group": [
                         {
                             "label": [
-                                "Drop aor paste  jcamp file"
+                                "Drop or paste  jcamp file"
                             ],
                             "dragoverlabel": [
                                 null
@@ -815,8 +815,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 34,
-                        "height": 9
+                        "width": 33.96666666269302,
+                        "height": 8.966666662693024
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum 1D",
@@ -841,7 +841,7 @@
                     "group": [
                         {
                             "label": [
-                                "Drop aor paste  jcamp file"
+                                "Drop or paste  jcamp file"
                             ],
                             "dragoverlabel": [
                                 null
@@ -905,8 +905,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 34,
-                        "height": 9
+                        "width": 33.96666666269302,
+                        "height": 8.966666662693024
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum 2D",
@@ -922,106 +922,6 @@
                 }
             },
             "title": "Superimpose exp. spectrum 2D"
-        },
-        {
-            "url": "modules/types/display/template-twig/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'COSY.jdx','application/jcamp-dx','{{ jcamp2D|url_encode }}')\">\n    <font color=\"red\"><b>Download COSY.jdx</b></font>\n</a>\n\n\n\n"
-                            ]
-                        }
-                    ]
-                }
-            },
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 119,
-                        "top": 21
-                    },
-                    "size": {
-                        "width": 16,
-                        "height": 4
-                    },
-                    "zIndex": 0,
-                    "display": true,
-                    "title": "Untitled",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
-                    "wrapper": false,
-                    "created": true,
-                    "name": "Default layer"
-                }
-            },
-            "id": 9,
-            "vars_in": [
-                {
-                    "rel": "value",
-                    "name": "jcamp2D"
-                }
-            ],
-            "actions_in": {},
-            "title": "Untitled",
-            "vars_out": {},
-            "actions_out": {}
-        },
-        {
-            "url": "modules/types/display/template-twig/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1H.jdx','application/jcamp-dx','{{ jcamp1|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
-                            ]
-                        }
-                    ]
-                }
-            },
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 120,
-                        "top": 1
-                    },
-                    "size": {
-                        "width": 16,
-                        "height": 4
-                    },
-                    "zIndex": 0,
-                    "display": true,
-                    "title": "Untitled",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
-                    "wrapper": false,
-                    "created": true,
-                    "name": "Default layer"
-                }
-            },
-            "id": 10,
-            "vars_in": [
-                {
-                    "rel": "value",
-                    "name": "jcamp1"
-                }
-            ],
-            "actions_in": {},
-            "title": "Untitled",
-            "vars_out": {},
-            "actions_out": {}
         }
     ],
     "variables": [

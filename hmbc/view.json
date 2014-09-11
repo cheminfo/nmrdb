@@ -47,8 +47,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 36
+                        "width": 36.96666666269302,
+                        "height": 35.96666666269302
                     },
                     "display": true,
                     "title": "Draw a chemical structure to predict",
@@ -108,8 +108,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 34,
-                        "height": 30
+                        "width": 33.96666666269302,
+                        "height": 29.966666662693022
                     },
                     "display": true,
                     "title": "Chemical structure with hydrogen exploded",
@@ -270,8 +270,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 58,
-                        "height": 19
+                        "width": 57.96666666269302,
+                        "height": 18.966666662693022
                     },
                     "display": true,
                     "title": "first dimension",
@@ -472,8 +472,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 19
+                        "width": 36.96666666269302,
+                        "height": 18.966666662693022
                     },
                     "display": true,
                     "title": "Simulation parameters",
@@ -642,8 +642,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 58,
-                        "height": 46
+                        "width": 57.96666666269302,
+                        "height": 45.96666666269302
                     },
                     "display": true,
                     "title": "Predicted 2D pattern. In red, 1 bound paths(HSQC signals)",
@@ -670,7 +670,7 @@
                     "group": [
                         {
                             "label": [
-                                "Drop aor paste  jcamp file"
+                                "Drop or paste  jcamp file"
                             ],
                             "dragoverlabel": [
                                 null
@@ -734,8 +734,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 34,
-                        "height": 9
+                        "width": 33.96666666269302,
+                        "height": 8.966666662693024
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum 1D",
@@ -813,8 +813,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37,
-                        "height": 9
+                        "width": 36.96666666269302,
+                        "height": 8.966666662693024
                     },
                     "display": true,
                     "title": "Log",
@@ -839,7 +839,7 @@
                     "group": [
                         {
                             "label": [
-                                "Drop aor paste  jcamp file"
+                                "Drop or paste  jcamp file"
                             ],
                             "dragoverlabel": [
                                 null
@@ -903,8 +903,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 34,
-                        "height": 9
+                        "width": 33.96666666269302,
+                        "height": 8.966666662693024
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum 2D",
