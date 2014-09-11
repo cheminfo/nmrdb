@@ -355,7 +355,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1H.jdx','application/jcamp-dx','{{ jcamp|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"1H.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ jcamp|url_encode }}\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n"
                             ]
                         }
                     ]

@@ -48,8 +48,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37.039999997615816,
-                        "height": 34.039999997615816
+                        "width": 37,
+                        "height": 34
                     },
                     "display": true,
                     "title": "Draw a chemical structure to predict",
@@ -111,8 +111,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 37.039999997615816,
-                        "height": 34.039999997615816
+                        "width": 37,
+                        "height": 34
                     },
                     "display": true,
                     "title": "Chemical structure with hydrogen exploded",
@@ -206,8 +206,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33.039999997615816,
-                        "height": 22.039999997615816
+                        "width": 33,
+                        "height": 22
                     },
                     "display": true,
                     "title": "NMRshiftDB predicted chemical shifts",
@@ -288,8 +288,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33.039999997615816,
-                        "height": 10.939999997615814
+                        "width": 33,
+                        "height": 11
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum",
@@ -454,8 +454,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 109.03999999761581,
-                        "height": 31.039999997615816
+                        "width": 109,
+                        "height": 31
                     },
                     "display": true,
                     "title": "13C NMR spectra",
@@ -635,7 +635,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'13C.jdx','application/jcamp-dx','{{ nmrSpectrum|url_encode }}')\">\n    <font color=\"red\"><b>Download 13C.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"13C.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ nmrSpectrum|url_encode }}\">\n    <font color=\"red\"><b>Download 13C.jdx</b></font>\n</a>\n"
                             ]
                         }
                     ]

@@ -47,8 +47,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 36.96666666269302,
-                        "height": 35.96666666269302
+                        "width": 37,
+                        "height": 36
                     },
                     "display": true,
                     "title": "Draw a chemical structure to predict",
@@ -108,8 +108,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33.96666666269302,
-                        "height": 29.966666662693022
+                        "width": 34,
+                        "height": 30
                     },
                     "display": true,
                     "title": "Chemical structure with hydrogen exploded",
@@ -270,8 +270,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 57.96666666269302,
-                        "height": 18.966666662693022
+                        "width": 58,
+                        "height": 19
                     },
                     "display": true,
                     "title": "first dimension",
@@ -472,8 +472,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 36.96666666269302,
-                        "height": 18.966666662693022
+                        "width": 37,
+                        "height": 19
                     },
                     "display": true,
                     "title": "Simulation parameters",
@@ -642,8 +642,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 57.96666666269302,
-                        "height": 45.96666666269302
+                        "width": 58,
+                        "height": 46
                     },
                     "display": true,
                     "title": "Predicted 2D pattern. In red, 1 bound paths(HSQC signals)",
@@ -734,8 +734,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33.96666666269302,
-                        "height": 8.966666662693024
+                        "width": 34,
+                        "height": 9
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum 1D",
@@ -813,8 +813,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 36.96666666269302,
-                        "height": 8.966666662693024
+                        "width": 37,
+                        "height": 9
                     },
                     "display": true,
                     "title": "Log",
@@ -903,8 +903,8 @@
                         "right": 0
                     },
                     "size": {
-                        "width": 33.96666666269302,
-                        "height": 8.966666662693024
+                        "width": 34,
+                        "height": 9
                     },
                     "display": true,
                     "title": "Superimpose exp. spectrum 2D",
@@ -929,7 +929,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1H.jdx','application/jcamp-dx','{{ jcamp1|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"1H.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ jcamp1|url_encode }}\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n"
                             ]
                         }
                     ]
@@ -979,7 +979,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'HMBC.jdx','application/jcamp-dx','{{ jcamp2D|url_encode }}')\">\n    <font color=\"red\"><b>Download HMBC.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"HMBC.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ jcamp2D|url_encode }}\">\n    <font color=\"red\"><b>Download HMBC.jdx</b></font>\n</a>\n"
                             ]
                         }
                     ]

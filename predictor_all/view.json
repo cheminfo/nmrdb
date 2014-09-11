@@ -1804,7 +1804,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'COSY.jdx','application/jcamp-dx','{{ cosy|url_encode }}')\">\n    <font color=\"red\"><b>Download COSY.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"COSY.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ cosy|url_encode }}\">\n    <font color=\"red\"><b>Download COSY.jdx</b></font>\n</a>\n"
                             ]
                         }
                     ]
@@ -1855,7 +1855,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'HMBC.jdx','application/jcamp-dx','{{ hmbc|url_encode }}')\">\n    <font color=\"red\"><b>Download HMBC.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"HMBC.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ hmbc|url_encode }}\">\n    <font color=\"red\"><b>Download HMBC.jdx</b></font>\n</a>\n\n\n"
                             ]
                         }
                     ]
@@ -1906,7 +1906,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'1H.jdx','application/jcamp-dx','{{ jcamp1H|url_encode }}')\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"1H.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ jcamp1H|url_encode }}\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n"
                             ]
                         }
                     ]
@@ -1957,7 +1957,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'13C.jdx','application/jcamp-dx','{{ jcamp13C|url_encode }}')\">\n    <font color=\"red\"><b>Download 13C.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"13C.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ jcamp13C|url_encode }}\">\n    <font color=\"red\"><b>Download 13C.jdx</b></font>\n</a>"
                             ]
                         }
                     ]
@@ -2008,7 +2008,7 @@
                     "group": [
                         {
                             "template": [
-                                "<script>\n    function createDownloadLink(element, filename, mimetype, text) {\n        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + text);\n        element.setAttribute('download', filename);\n    }\n</script>\n\n<a onmouseover=\"createDownloadLink(this,'ms.jdx','application/jcamp-dx','{{ ms|url_encode }}')\">\n    <font color=\"red\"><b>Download ms.jdx</b></font>\n</a>\n\n\n\n"
+                                "<a download=\"ms.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ ms|url_encode }}\">\n    <font color=\"red\"><b>Download ms.jdx</b></font>\n</a>\n"
                             ]
                         }
                     ]
