@@ -18,7 +18,7 @@
                     <!--#include virtual="../header.html" -->
                     <!--#include virtual="../menu.html" -->
                     <!--#include virtual="about.html" -->
-                    <!--#include virtual="../social.html" -->
+                    <!--#include virtual="../tweet.html" -->
                     <!--#include virtual="../footer.html" -->
                 </table>
             </td>
