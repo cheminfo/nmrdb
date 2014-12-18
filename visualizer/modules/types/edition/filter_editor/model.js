@@ -1,1 +1,0 @@
-define(["modules/types/client_interaction/code_editor/model"],function(a){function b(){}return b.prototype=Object.create(a.prototype),b});

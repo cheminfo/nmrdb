@@ -1,1 +1,0 @@
-define(["../../field"],function(a){var b=function(a){this.name=a};return b.prototype=new a,b});
