@@ -56,7 +56,7 @@
           ]
         }
       },
-      "id": 80,
+      "id": 46,
       "vars_in": [
         {
           "rel": "mol",
@@ -212,7 +212,7 @@
           ]
         }
       },
-      "id": 81,
+      "id": 47,
       "vars_in": [
         {
           "rel": "jcamp",
@@ -375,7 +375,7 @@
           ]
         }
       },
-      "id": 82,
+      "id": 48,
       "vars_in": [
         {
           "rel": "jcamp",
@@ -537,7 +537,7 @@
           ]
         }
       },
-      "id": 83,
+      "id": 49,
       "vars_in": [
         {
           "rel": "jcamp",
@@ -698,7 +698,7 @@
           ]
         }
       },
-      "id": 84,
+      "id": 50,
       "vars_in": [
         {
           "rel": "jcamp",
@@ -863,7 +863,7 @@
           ]
         }
       },
-      "id": 85,
+      "id": 51,
       "vars_in": [
         {
           "rel": "jcamp",
@@ -988,7 +988,7 @@
           ]
         }
       },
-      "id": 86,
+      "id": 52,
       "vars_in": [
         {
           "rel": "vartrigger",
@@ -1201,7 +1201,7 @@
           ]
         }
       },
-      "id": 87,
+      "id": 53,
       "vars_in": [
         {
           "rel": "value",
@@ -1278,7 +1278,7 @@
           ]
         }
       },
-      "id": 88,
+      "id": 54,
       "vars_in": [],
       "title": "COSY",
       "vars_out": [
@@ -1369,7 +1369,7 @@
           ]
         }
       },
-      "id": 89,
+      "id": 55,
       "vars_in": [],
       "title": "HMBC/HSQC",
       "vars_out": [
@@ -1460,7 +1460,7 @@
           ]
         }
       },
-      "id": 90,
+      "id": 56,
       "vars_in": [],
       "title": "1H-NMR",
       "vars_out": [
@@ -1527,7 +1527,7 @@
           ]
         }
       },
-      "id": 91,
+      "id": 57,
       "vars_in": [
         {
           "rel": "value",
@@ -1608,7 +1608,7 @@
           ]
         }
       },
-      "id": 92,
+      "id": 58,
       "vars_in": [],
       "title": "13C-NMR",
       "vars_out": [
@@ -1699,7 +1699,7 @@
           ]
         }
       },
-      "id": 93,
+      "id": 59,
       "vars_in": [],
       "title": "MS",
       "vars_out": [
@@ -1772,7 +1772,7 @@
           ]
         }
       },
-      "id": 94,
+      "id": 60,
       "vars_in": [
         {
           "rel": "mol",
@@ -1834,7 +1834,7 @@
           "name": "Default layer"
         }
       },
-      "id": 95,
+      "id": 61,
       "vars_in": [
         {
           "rel": "value",
@@ -1885,7 +1885,7 @@
           "name": "Default layer"
         }
       },
-      "id": 96,
+      "id": 62,
       "vars_in": [
         {
           "rel": "value",
@@ -1936,7 +1936,7 @@
           "name": "Default layer"
         }
       },
-      "id": 97,
+      "id": 63,
       "vars_in": [
         {
           "rel": "value",
@@ -1987,7 +1987,7 @@
           "name": "Default layer"
         }
       },
-      "id": 98,
+      "id": 64,
       "vars_in": [
         {
           "rel": "value",
@@ -2038,7 +2038,7 @@
           "name": "Default layer"
         }
       },
-      "id": 99,
+      "id": 65,
       "vars_in": [
         {
           "rel": "value",
@@ -2211,7 +2211,7 @@
         "general": [
           {
             "script": [
-              "require(['src/util/pouchtovar'], function(pouchtovar) {\n    Promise.all([pouchtovar.pouchToVar('external_infos', 'molfile'), pouchtovar.pouchToVar('external_infos', 'smiles')]).then(function(value) {\n        var molfile = value[0];\n        var smiles = value[1];\n        \n\n        if(!molfile._rev && !smiles._rev) {\n            console.log('not available');\n            return;\n        }\n        var useMolfile = (molfile._rev && !smiles._rev) || (molfile._rev && smiles._rev && molfile.timestamp > smiles.timestamp);\n        \n        if(useMolfile) {\n            console.log('use molfile', molfile);\n            $.ajax({\n                url: 'http://script.epfl.ch/script/Service/20140826/IXnW4ymIPf',\n                type: 'POST',\n                data: { molfile: molfile.get() },\n                dataType: 'json'\n            }).done(function(val) {\n                console.log('checked molfile:', val);\n                var checkedMolfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', checkedMolfile);\n                API.createData('molfile-ext', checkedMolfile);\n            });\n            \n\n            \n            \n        }\n        else {\n            console.log('use smiles');\n            $.ajax({\n                url: 'http://www.nmrdb.org/service/smiles2molfile',\n                type: 'POST',\n                data: {smiles: smiles.get()},\n                dataType: 'json'\n            }).done(function(val){\n                var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', molfile);\n                API.createData('molfile-ext', molfile);\n            })\n        }\n    });\n    \n    \n    console.log(pouchtovar);\n});"
+              "var ls = window.localStorage;\n\nvar ext = ls.getItem('external_cache');\next = ext || '{}';\next = JSON.parse(ext);\nvar smiles = ext.smiles;\nvar molfile = ext.molfile;\n\nif(molfile) {\n    console.log('use molfile', molfile);\n    $.ajax({\n        url: 'http://script.epfl.ch/script/Service/20140826/IXnW4ymIPf',\n        type: 'POST',\n        data: { molfile: molfile },\n        dataType: 'json'\n    }).done(function(val) {\n        console.log('checked molfile:', val);\n        var checkedMolfile = DataObject.check({type:'mol2d', value: val.molfile});\n        API.createData('molfile', checkedMolfile);\n        API.createData('molfile-ext', checkedMolfile);\n    });\n\n\n\n\n}\nelse if(smiles){\n    console.log('use smiles');\n    $.ajax({\n        url: 'http://www.nmrdb.org/service/smiles2molfile',\n        type: 'POST',\n        data: {smiles: smiles},\n        dataType: 'json'\n    }).done(function(val){\n        var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n        API.createData('molfile', molfile);\n        API.createData('molfile-ext', molfile);\n    })\n}\n    "
             ]
           }
         ]
@@ -2228,6 +2228,35 @@
           ]
         ]
       }
+    }
+  ],
+  "custom_filters": [
+    {
+      "sections": {
+        "filters": [
+          {
+            "sections": {},
+            "groups": {
+              "filter": [
+                {
+                  "name": [
+                    null
+                  ],
+                  "script": [
+                    null
+                  ]
+                }
+              ],
+              "libs": [
+                [
+                  {}
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "groups": {}
     }
   ]
 }

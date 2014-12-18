@@ -22,7 +22,7 @@
           ]
         }
       },
-      "id": 152,
+      "id": 8,
       "vars_in": [
         {
           "rel": "mol",
@@ -87,7 +87,7 @@
           ]
         }
       },
-      "id": 153,
+      "id": 9,
       "vars_in": [
         {
           "rel": "jme",
@@ -230,7 +230,7 @@
           ]
         }
       },
-      "id": 154,
+      "id": 10,
       "vars_in": [
         {
           "rel": "jcamp",
@@ -390,7 +390,7 @@
           ]
         }
       },
-      "id": 155,
+      "id": 11,
       "vars_in": [
         {
           "rel": "vartrigger",
@@ -608,7 +608,7 @@
           ]
         }
       },
-      "id": 156,
+      "id": 12,
       "vars_in": [
         {
           "rel": "jcamp",
@@ -712,7 +712,7 @@
           ]
         }
       },
-      "id": 157,
+      "id": 13,
       "vars_in": [
         {
           "rel": "value",
@@ -794,7 +794,7 @@
           ]
         }
       },
-      "id": 158,
+      "id": 14,
       "vars_in": [],
       "actions_in": {},
       "vars_out": [
@@ -884,7 +884,7 @@
           ]
         }
       },
-      "id": 159,
+      "id": 15,
       "vars_in": [],
       "actions_in": {},
       "vars_out": [
@@ -966,7 +966,7 @@
           "name": "Default layer"
         }
       },
-      "id": 160,
+      "id": 16,
       "vars_in": [
         {
           "rel": "value",
@@ -1016,7 +1016,7 @@
           "name": "Default layer"
         }
       },
-      "id": 161,
+      "id": 17,
       "vars_in": [
         {
           "rel": "value",
@@ -1081,7 +1081,7 @@
           "name": "Default layer"
         }
       },
-      "id": 162,
+      "id": 18,
       "vars_in": [
         {
           "rel": "value",
@@ -1199,7 +1199,7 @@
         "general": [
           {
             "script": [
-              "require(['src/util/pouchtovar'], function(pouchtovar) {\n    Promise.all([pouchtovar.pouchToVar('external_infos', 'molfile'), pouchtovar.pouchToVar('external_infos', 'smiles')]).then(function(value) {\n        var molfile = value[0];\n        var smiles = value[1];\n        \n\n        if(!molfile._rev && !smiles._rev) {\n            console.log('not available');\n            return;\n        }\n        var useMolfile = (molfile._rev && !smiles._rev) || (molfile._rev && smiles._rev && molfile.timestamp > smiles.timestamp);\n        \n        if(useMolfile) {\n            console.log('use molfile', molfile);\n            $.ajax({\n                url: 'http://script.epfl.ch/script/Service/20140826/IXnW4ymIPf',\n                type: 'POST',\n                data: { molfile: molfile.get() },\n                dataType: 'json'\n            }).done(function(val) {\n                console.log('checked molfile:', val);\n                var checkedMolfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', checkedMolfile);\n                API.createData('molfile-ext', checkedMolfile);\n            });\n            \n\n            \n            \n        }\n        else {\n            console.log('use smiles');\n            $.ajax({\n                url: 'http://www.nmrdb.org/service/smiles2molfile',\n                type: 'POST',\n                data: {smiles: smiles.get()},\n                dataType: 'json'\n            }).done(function(val){\n                var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n                API.createData('molfile', molfile);\n                API.createData('molfile-ext', molfile);\n            })\n        }\n    });\n    \n    \n    console.log(pouchtovar);\n});"
+              "var ls = window.localStorage;\n\nvar ext = ls.getItem('external_cache');\next = ext || '{}';\next = JSON.parse(ext);\nvar smiles = ext.smiles;\nvar molfile = ext.molfile;\n\nif(molfile) {\n    console.log('use molfile', molfile);\n    $.ajax({\n        url: 'http://script.epfl.ch/script/Service/20140826/IXnW4ymIPf',\n        type: 'POST',\n        data: { molfile: molfile },\n        dataType: 'json'\n    }).done(function(val) {\n        console.log('checked molfile:', val);\n        var checkedMolfile = DataObject.check({type:'mol2d', value: val.molfile});\n        API.createData('molfile', checkedMolfile);\n        API.createData('molfile-ext', checkedMolfile);\n    });\n\n\n\n\n}\nelse if(smiles){\n    console.log('use smiles');\n    $.ajax({\n        url: 'http://www.nmrdb.org/service/smiles2molfile',\n        type: 'POST',\n        data: {smiles: smiles},\n        dataType: 'json'\n    }).done(function(val){\n        var molfile = DataObject.check({type:'mol2d', value: val.molfile});\n        API.createData('molfile', molfile);\n        API.createData('molfile-ext', molfile);\n    })\n}\n    "
             ]
           }
         ]
@@ -1226,5 +1226,34 @@
     },
     "xWidth": 10,
     "yHeight": 10
-  }
+  },
+  "custom_filters": [
+    {
+      "sections": {
+        "filters": [
+          {
+            "sections": {},
+            "groups": {
+              "filter": [
+                {
+                  "name": [
+                    null
+                  ],
+                  "script": [
+                    null
+                  ]
+                }
+              ],
+              "libs": [
+                [
+                  {}
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "groups": {}
+    }
+  ]
 }
