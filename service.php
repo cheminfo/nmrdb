@@ -56,7 +56,7 @@
     } else {
         try{
             if(window.localStorage) {
-                window.localStorage.setItem('external_infos', JSON.stringify(data));
+                window.localStorage.setItem('external_cache', JSON.stringify(data));
             }
             writeBody('Document written to database. Redirecting...');
             setTimeout(function() {
