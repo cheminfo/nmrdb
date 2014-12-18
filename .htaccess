@@ -3,5 +3,5 @@ Options +Includes
 AddType text/html .shtml
 AddOutputFilter INCLUDES .shtml
 
-DirectoryIndex index.shtml index.php index.html
+DirectoryIndex load.shtml index.shtml index.php index.html
 

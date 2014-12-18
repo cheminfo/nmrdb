@@ -1,0 +1,34 @@
+<div id="message"></div>
+<script type="text/javascript">
+    var $div = $('#message');
+    $.getJSON('http://www.lactame.com/visualizer/versions.php').then(function(versions) {
+        var uri = new URI(document.location.href);
+        var search = uri.search(true);
+        var url;
+        if (search.viewURL) {
+            url = search.viewURL;
+        } else {
+            url = './view.json';
+        }
+        $.getJSON(url).then(function (view) {
+            var redirect = 'latest';
+            if (view.version) {
+                var idx = versions.indexOf('v' + view.version);
+                if (idx > -1) {
+                    redirect = versions[idx];
+                }
+                else {
+                    $div.html('Could not find version required by the view');
+                    redirect = 'HEAD';
+                }
+            }
+            if(redirect) {
+                uri.filename('index.shtml');
+                uri.setSearch('v', redirect);
+                window.location = uri.href();
+            }
+        }, function () {
+            $div.html('view at <a href="' + url + '" target="_blank">' + url + '</a> could not be loaded');
+        });
+    });
+</script>

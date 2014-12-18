@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR Spectra Prediction, 13C NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
     <meta name="description" content="Predict 13C carbon NMR spectra directly from your webbrowser using standard HTML5.">
-    <!--#include virtual="../visualizer-head.html" -->
 </head>
 
 <body>
@@ -19,7 +18,7 @@
                     <!--#include virtual="../header.html" -->
                     <!--#include virtual="../menu.html" --><!--#include virtual="../social.html" -->
                     <!--#include virtual="nmrpredict.html" -->
-                    <!--#include virtual="../visualizer.html" -->
+                    <!--#include virtual="../visualizer_lactame/index.html" -->
                     <!--#include virtual="../footer.html" -->
                 </table>
             </td>

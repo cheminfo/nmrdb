@@ -19,7 +19,7 @@
                     <!--#include virtual="../header.html" -->
                     <!--#include virtual="../menu.html" --><!--#include virtual="../social.html" -->
                     <!--#include virtual="nmrpredict.html" -->
-                    <!--#include virtual="../visualizer.html" -->
+                    <!--#include virtual="../visualizer_lactame/index.html" -->
                     <!--#include virtual="../footer.html" -->
                 </table>
             </td>

@@ -1,0 +1,27 @@
+<script>
+    window.onload = function () {
+        var visualizer = document.createElement('script');
+        var query = document.location.search;
+        var version = 'latest';
+        if (query) {
+            var parts = query.substr(1).split('&');
+            for (var i = 0; i < parts.length; i++) {
+                if(parts[i].indexOf('v=') === 0) {
+                    version = parts[i].substr(2);
+                    break;
+                }
+            }
+        }
+        var prefix = 'http://www.lactame.com/visualizer/';
+        visualizer.setAttribute('data-main', prefix + version + '/init');
+        visualizer.setAttribute('src', prefix + version + '/components/requirejs/require.js');
+        document.head.appendChild(visualizer);
+    }
+</script>
+<tr>
+    <td class="left"></td>
+    <td colspan="3">
+        <div id="ci-visualizer" style="margin-top: 15px" viewURL="./view.json" config="../noedit.json">
+    </td>
+    <td class="right"></td>
+</tr>

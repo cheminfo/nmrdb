@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR prediction, COSY prediction, HMBC Prediction, HSQC Prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
     <!--#include virtual="../meta.html" -->
-    <!--#include virtual="../visualizer-head.html" -->
 </head>
 
 <body>
@@ -19,7 +18,7 @@
                     <!--#include virtual="../header.html" -->
                     <!--#include virtual="../menu.html" --><!--#include virtual="../social.html" -->
                     <!--#include virtual="nmrpredictall.html" -->
-                    <!--#include virtual="../visualizer.html" -->
+                    <!--#include virtual="../visualizer_lactame/index.html" -->
                     <!--#include virtual="../footer.html" -->
                 </table>
             </td>

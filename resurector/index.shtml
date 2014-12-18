@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR resurrector, Nuclear magnetic resonance, experimental part">
     <meta name="description" content="Recreate (resurect) 1H and 13C NMR spectra from the inline assignment from a publication experimental part.">
-    <!--#include virtual="../visualizer-head.html" -->
 </head>
 
 <body>
@@ -19,7 +18,7 @@
                     <!--#include virtual="../header.html" -->
                     <!--#include virtual="../menu.html" --><!--#include virtual="../social.html" -->
                     <!--#include virtual="nmrresurrect.html" -->
-                    <!--#include virtual="../visualizer.html" -->
+                    <!--#include virtual="../visualizer_lactame/index.html" -->
                     <!--#include virtual="../footer.html" -->
                 </table>
             </td>

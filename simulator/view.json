@@ -1,390 +1,390 @@
 {
-    "_id": "admin@cheminfo.org:view:Spectra:NMR:Tools:Simulation",
-    "_rev": "1-14161796d27d55be53fa72afcc5d3146",
-    "modules": [
-        {
-            "url": "modules/types/science/spectra/spectra_displayer/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "graphurl": [
-                                ""
-                            ],
-                            "flip": [
-                                [
-                                    "flipX"
-                                ]
-                            ],
-                            "displayAxis": [
-                                [
-                                    "x"
-                                ]
-                            ],
-                            "grids": [
-                                []
-                            ],
-                            "xLabel": [
-                                ""
-                            ],
-                            "yTopSpacing": [
-                                0
-                            ],
-                            "yBottomSpacing": [
-                                "0.05"
-                            ],
-                            "xLeftSpacing": [
-                                0
-                            ],
-                            "xRightSpacing": [
-                                0
-                            ],
-                            "yLabel": [
-                                ""
-                            ],
-                            "minX": [
-                                ""
-                            ],
-                            "maxX": [
-                                ""
-                            ],
-                            "minY": [
-                                ""
-                            ],
-                            "maxY": [
-                                ""
-                            ],
-                            "zoom": [
-                                "x"
-                            ],
-                            "shiftxtozero": [
-                                []
-                            ],
-                            "xastime": [
-                                []
-                            ],
-                            "wheelAction": [
-                                "zoomY"
-                            ],
-                            "fullOut": [
-                                "both"
-                            ]
-                        }
-                    ],
-                    "plotinfos": [
-                        [
-                            {
-                                "variable": "jcamp",
-                                "plotcolor": [
-                                    1,
-                                    1,
-                                    255,
-                                    1
-                                ],
-                                "strokewidth": "1",
-                                "plotcontinuous": [
-                                    "continuous"
-                                ],
-                                "peakpicking": [],
-                                "markers": [],
-                                "normalize": "max1",
-                                "optimizeSlots": []
-                            },
-                            {
-                                "variable": "experimental",
-                                "plotcolor": [
-                                    255,
-                                    9,
-                                    0,
-                                    0.4
-                                ],
-                                "strokewidth": "2",
-                                "plotcontinuous": [
-                                    "continuous",
-                                    "continuous"
-                                ],
-                                "peakpicking": [],
-                                "markers": [],
-                                "normalize": "max1",
-                                "optimizeSlots": [
-                                    "slots"
-                                ]
-                            }
-                        ]
-                    ]
-                }
-            },
-            "id": 1,
-            "vars_in": [
-                {
-                    "rel": "jcamp",
-                    "name": "jcamp"
-                },
-                {
-                    "rel": "jcamp",
-                    "name": "experimental"
-                }
-            ],
-            "actions_in": [
-                {}
-            ],
-            "vars_out": [
-                {}
-            ],
-            "actions_out": [
-                {}
-            ],
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 43,
-                        "top": 0,
-                        "right": 0
-                    },
-                    "size": {
-                        "width": 67,
-                        "height": 48
-                    },
-                    "display": true,
-                    "title": "Simulated spectrum",
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ]
-                }
-            },
-            "title": "Simulated spectrum"
-        },
-        {
-            "url": "modules/types/science/spectra/nmr/webservice_nmr_spin/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "url": [
-                                "http://www.nmrdb.org/service/simulation"
-                            ],
-                            "systemSize": [
-                                "3"
-                            ],
-                            "button": [
-                                []
-                            ],
-                            "buttonlabel": [
-                                "Calculate"
-                            ],
-                            "buttonlabel_exec": [
-                                "Calculating"
-                            ],
-                            "onloadanalysis": [
-                                [
-                                    "onload"
-                                ]
-                            ]
-                        }
-                    ]
-                }
-            },
-            "id": 2,
-            "vars_in": [],
-            "actions_in": {},
-            "vars_out": [
-                {
-                    "event": "onSearchReturn",
-                    "rel": "results",
-                    "jpath": [
-                        "jcamp"
-                    ],
-                    "name": "jcamp"
-                }
-            ],
-            "actions_out": {},
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 0,
-                        "top": 0,
-                        "right": 0
-                    },
-                    "size": {
-                        "width": 42,
-                        "height": 29
-                    },
-                    "display": true,
-                    "title": "Describe your spin system",
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ]
-                }
-            },
-            "title": "Describe your spin system"
-        },
-        {
-            "url": "modules/types/client_interaction/dragdrop/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "label": [
-                                "Drop or paste a jcamp file"
-                            ]
-                        }
-                    ],
-                    "vars": [
-                        [
-                            {
-                                "extension": "jdx",
-                                "filetype": "text",
-                                "type": "jcamp",
-                                "variable": "jcamp"
-                            },
-                            {
-                                "extension": "dx",
-                                "filetype": "text",
-                                "type": "jcamp",
-                                "variable": "jcamp"
-                            }
-                        ]
-                    ],
-                    "string": [
-                        [
-                            {
-                                "type": "jcamp",
-                                "variable": "jcamp"
-                            }
-                        ]
-                    ]
-                }
-            },
-            "id": 3,
-            "vars_in": [],
-            "actions_in": {},
-            "vars_out": [
-                {
-                    "event": "onRead",
-                    "rel": "data",
-                    "jpath": [
-                        "jcamp",
-                        "content"
-                    ],
-                    "name": "experimental"
-                }
-            ],
-            "actions_out": [
-                {}
-            ],
-            "zindex": 4,
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 0,
-                        "top": 30,
-                        "right": 0
-                    },
-                    "size": {
-                        "width": 42,
-                        "height": 18
-                    },
-                    "display": true,
-                    "title": "Superimpose exp. spectrum",
-                    "wrapper": true,
-                    "created": true,
-                    "name": "Default layer",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ]
-                }
-            },
-            "title": "Superimpose exp. spectrum"
-        },
-        {
-            "url": "modules/types/display/template-twig/",
-            "configuration": {
-                "sections": {},
-                "groups": {
-                    "group": [
-                        {
-                            "template": [
-                                "<a download=\"1H.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ jcamp|url_encode }}\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n"
-                            ]
-                        }
-                    ]
-                }
-            },
-            "layers": {
-                "Default layer": {
-                    "position": {
-                        "left": 100,
-                        "top": 1
-                    },
-                    "size": {
-                        "width": 13,
-                        "height": 3
-                    },
-                    "zIndex": 0,
-                    "display": true,
-                    "title": "Untitled",
-                    "bgColor": [
-                        255,
-                        255,
-                        255,
-                        0
-                    ],
-                    "wrapper": false,
-                    "created": true,
-                    "name": "Default layer"
-                }
-            },
-            "id": 4,
-            "vars_in": [
-                {
-                    "rel": "value",
-                    "name": "jcamp"
-                }
-            ],
-            "actions_in": {},
-            "title": "Untitled",
-            "vars_out": {},
-            "actions_out": {}
-        }
-    ],
-    "variables": [
-        {
-            "varname": "exercises",
-            "jpath": [
-                "exercises"
-            ]
-        }
-    ],
-    "configuration": {
-        "title": "Simulate NMR spin system"
-    },
-    "version": "2.4.2",
-    "pouchvariables": [],
-    "grid": {
-        "layers": {
-            "Default layer": {
-                "name": "Default layer"
+  "_id": "admin@cheminfo.org:view:Spectra:NMR:Tools:Simulation",
+  "_rev": "1-14161796d27d55be53fa72afcc5d3146",
+  "modules": [
+    {
+      "url": "modules/types/science/spectra/spectra_displayer/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "graphurl": [
+                ""
+              ],
+              "flip": [
+                [
+                  "flipX"
+                ]
+              ],
+              "displayAxis": [
+                [
+                  "x"
+                ]
+              ],
+              "grids": [
+                []
+              ],
+              "xLabel": [
+                ""
+              ],
+              "yTopSpacing": [
+                0
+              ],
+              "yBottomSpacing": [
+                "0.05"
+              ],
+              "xLeftSpacing": [
+                0
+              ],
+              "xRightSpacing": [
+                0
+              ],
+              "yLabel": [
+                ""
+              ],
+              "minX": [
+                ""
+              ],
+              "maxX": [
+                ""
+              ],
+              "minY": [
+                ""
+              ],
+              "maxY": [
+                ""
+              ],
+              "zoom": [
+                "x"
+              ],
+              "shiftxtozero": [
+                []
+              ],
+              "xastime": [
+                []
+              ],
+              "wheelAction": [
+                "zoomY"
+              ],
+              "fullOut": [
+                "both"
+              ]
             }
+          ],
+          "plotinfos": [
+            [
+              {
+                "variable": "jcamp",
+                "plotcolor": [
+                  1,
+                  1,
+                  255,
+                  1
+                ],
+                "strokewidth": "1",
+                "plotcontinuous": [
+                  "continuous"
+                ],
+                "peakpicking": [],
+                "markers": [],
+                "normalize": "max1",
+                "optimizeSlots": []
+              },
+              {
+                "variable": "experimental",
+                "plotcolor": [
+                  255,
+                  9,
+                  0,
+                  0.4
+                ],
+                "strokewidth": "2",
+                "plotcontinuous": [
+                  "continuous",
+                  "continuous"
+                ],
+                "peakpicking": [],
+                "markers": [],
+                "normalize": "max1",
+                "optimizeSlots": [
+                  "slots"
+                ]
+              }
+            ]
+          ]
+        }
+      },
+      "id": 112,
+      "vars_in": [
+        {
+          "rel": "jcamp",
+          "name": "jcamp"
         },
-        "xWidth": 10,
-        "yHeight": 10
+        {
+          "rel": "jcamp",
+          "name": "experimental"
+        }
+      ],
+      "actions_in": [
+        {}
+      ],
+      "vars_out": [
+        {}
+      ],
+      "actions_out": [
+        {}
+      ],
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 43,
+            "top": 0,
+            "right": 0
+          },
+          "size": {
+            "width": 67,
+            "height": 48
+          },
+          "display": true,
+          "title": "Simulated spectrum",
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer",
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ]
+        }
+      },
+      "title": "Simulated spectrum"
+    },
+    {
+      "url": "modules/types/science/spectra/nmr/webservice_nmr_spin/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "url": [
+                "http://www.nmrdb.org/service/simulation"
+              ],
+              "systemSize": [
+                "3"
+              ],
+              "button": [
+                []
+              ],
+              "buttonlabel": [
+                "Calculate"
+              ],
+              "buttonlabel_exec": [
+                "Calculating"
+              ],
+              "onloadanalysis": [
+                [
+                  "onload"
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "id": 113,
+      "vars_in": [],
+      "actions_in": {},
+      "vars_out": [
+        {
+          "event": "onSearchReturn",
+          "rel": "results",
+          "jpath": [
+            "jcamp"
+          ],
+          "name": "jcamp"
+        }
+      ],
+      "actions_out": {},
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 0,
+            "top": 0,
+            "right": 0
+          },
+          "size": {
+            "width": 42,
+            "height": 29
+          },
+          "display": true,
+          "title": "Describe your spin system",
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer",
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ]
+        }
+      },
+      "title": "Describe your spin system"
+    },
+    {
+      "url": "modules/types/client_interaction/dragdrop/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "label": [
+                "Drop or paste a jcamp file"
+              ]
+            }
+          ],
+          "vars": [
+            [
+              {
+                "extension": "jdx",
+                "filetype": "text",
+                "type": "jcamp",
+                "variable": "jcamp"
+              },
+              {
+                "extension": "dx",
+                "filetype": "text",
+                "type": "jcamp",
+                "variable": "jcamp"
+              }
+            ]
+          ],
+          "string": [
+            [
+              {
+                "type": "jcamp",
+                "variable": "jcamp"
+              }
+            ]
+          ]
+        }
+      },
+      "id": 114,
+      "vars_in": [],
+      "actions_in": {},
+      "vars_out": [
+        {
+          "event": "onRead",
+          "rel": "data",
+          "jpath": [
+            "jcamp",
+            "content"
+          ],
+          "name": "experimental"
+        }
+      ],
+      "actions_out": [
+        {}
+      ],
+      "zindex": 4,
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 0,
+            "top": 30,
+            "right": 0
+          },
+          "size": {
+            "width": 42,
+            "height": 18
+          },
+          "display": true,
+          "title": "Superimpose exp. spectrum",
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer",
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ]
+        }
+      },
+      "title": "Superimpose exp. spectrum"
+    },
+    {
+      "url": "modules/types/display/template-twig/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "template": [
+                "<a download=\"1H.jdx\" href=\"data:application/jcamp-dx;charset=utf-8,{{ jcamp|url_encode }}\">\n    <font color=\"red\"><b>Download 1H.jdx</b></font>\n</a>\n"
+              ]
+            }
+          ]
+        }
+      },
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 100,
+            "top": 1
+          },
+          "size": {
+            "width": 13,
+            "height": 3
+          },
+          "zIndex": 0,
+          "display": true,
+          "title": "Untitled",
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ],
+          "wrapper": false,
+          "created": true,
+          "name": "Default layer"
+        }
+      },
+      "id": 115,
+      "vars_in": [
+        {
+          "rel": "value",
+          "name": "jcamp"
+        }
+      ],
+      "actions_in": {},
+      "title": "Untitled",
+      "vars_out": {},
+      "actions_out": {}
     }
+  ],
+  "variables": [
+    {
+      "varname": "exercises",
+      "jpath": [
+        "exercises"
+      ]
+    }
+  ],
+  "configuration": {
+    "title": "Simulate NMR spin system"
+  },
+  "version": "2.9.9",
+  "pouchvariables": [],
+  "grid": {
+    "layers": {
+      "Default layer": {
+        "name": "Default layer"
+      }
+    },
+    "xWidth": 10,
+    "yHeight": 10
+  }
 }
