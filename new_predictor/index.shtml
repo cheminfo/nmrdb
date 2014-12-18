@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <meta name="keywords" content="NMR Spectra Prediction, NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'">
     <!--#include virtual="../meta.html" -->
-    <!--#include virtual="../visualizer-head.html" -->
 </head>
 
 <body>
