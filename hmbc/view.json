@@ -1080,7 +1080,7 @@
   "configuration": {
     "title": "Predict NMR spectra-HMBC"
   },
-  "version": "2.9.9",
+  "version": "2.9.10",
   "pouchvariables": [
     {}
   ],

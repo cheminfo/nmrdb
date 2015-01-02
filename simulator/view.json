@@ -376,7 +376,7 @@
   "configuration": {
     "title": "Simulate NMR spin system"
   },
-  "version": "2.9.9",
+  "version": "2.9.10",
   "pouchvariables": [],
   "grid": {
     "layers": {

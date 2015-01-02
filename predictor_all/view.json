@@ -8,7 +8,7 @@
     "xWidth": 10,
     "yHeight": 10
   },
-  "version": "2.9.9",
+  "version": "2.9.10",
   "modules": [
     {
       "url": "modules/types/science/chemistry/jsme/",

@@ -409,7 +409,7 @@
   "configuration": {
     "title": "Resurrect NMR spectrum"
   },
-  "version": "2.9.9",
+  "version": "2.9.10",
   "pouchvariables": [],
   "grid": {
     "layers": {
