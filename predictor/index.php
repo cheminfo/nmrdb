@@ -17,7 +17,7 @@
 					<?php include('../header.html')?>
 					<?php include('../menu.html')?>
 					<?php include('predictor.php')?>
-					<?php include('../../footer.html')?>
+					<?php include('../footer.html')?>
                 </table>
             </td>
         </tr>
