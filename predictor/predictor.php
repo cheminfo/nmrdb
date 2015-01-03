@@ -360,7 +360,7 @@ M  END
                 </textarea>
             </form>
 
-            <textarea id="transfered" rows=2 cols=20 style="display: none"><?php echo $_POST['molfile'] ?></textarea>
+            <textarea id="transfered" rows=2 cols=20 style="display: none"><?php if (isset($_POST['molfile'])) {echo $_POST['molfile'];} ?></textarea>
 
 
             <script language="javascript">
@@ -397,7 +397,7 @@ M  END
                     }
                 }
 
-                var smiles=unescape("<?php echo $_GET['smiles'] ?>");
+                var smiles=unescape("<?php if (isset($_GET['smiles'])) {echo $_GET['smiles'];} ?>");
                 if (smiles.length>1) {
                     setSmiles(smiles);
 
