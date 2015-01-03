@@ -376,9 +376,10 @@ M  END
 				console.log('APPLET LOADED');
 			};
                 function setSmiles(smiles) {
+			console.log(smiles);
                     if (initializeRequester()) {
                         requester.onreadystatechange = setMolfileFromWeb;
-                        var theUrl="/cheminfo/servlet/com.actelion.research.chem.MEAServlet?format=mol&smiles="+escape(smiles).replace(/%20/,"%2B");
+                        var theUrl="/moleculeDepictor/MoleculeDepictor?format=mol&smiles="+escape(smiles).replace(/%20/,"%2B");
                         requester.open("GET", theUrl, true);
                         requester.send(null);
 
@@ -396,7 +397,7 @@ M  END
                     }
                 }
 
-                var smiles=unescape("%smiles:get%");
+                var smiles=unescape("<?php echo $_GET['smiles'] ?>");
                 if (smiles.length>1) {
                     setSmiles(smiles);
 
