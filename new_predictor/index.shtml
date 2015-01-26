@@ -1,4 +1,6 @@
 <!--#include virtual="../views.shtml" -->
 <!--#set var="view" value="$new_predictor_view" -->
 <!--#set var="static_content" value="$new_predictor_static" -->
+<!--#set var="title" value="Predict 1H proton NMR spectra" -->
+<!--#set var="keywords" value="NMR Spectra Prediction, 13C NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'" -->
 <!--#include virtual="../index.shtml" -->

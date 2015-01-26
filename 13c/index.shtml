@@ -1,4 +1,7 @@
 <!--#include virtual="../views.shtml" -->
 <!--#set var="view" value="$13c_view" -->
 <!--#set var="static_content" value="$13c_static" -->
+<!--#set var="title" value="Predict 13C carbon NMR spectra" -->
+<!--#set var="keywords" value="NMR Spectra Prediction, 13C NMR prediction, Nuclear magnetic resonance, AB, ABX, AA'XX'" -->
+<!--#set var="description" value="Predict 13C carbon NMR spectra directly from your webbrowser using standard HTML5." -->
 <!--#include virtual="../index.shtml" -->
