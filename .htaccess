@@ -1,3 +1,4 @@
+SSILegacyExprParser on
 Options +Includes
 
 AddType text/html .shtml
