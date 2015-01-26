@@ -1,2 +1,2 @@
-<!--#set var="view" value="./view.json" -->
+<!--#set var="view" value="http://test.nmrdb.org/couchcheminfo/1a2f56c6e19761ec8e64c07c007096b8/view.json?rev=8-364b5bc6a756c5fddd8b9f5fca5ba841" -->
 <!--#include virtual="../visualizer_lactame/load.shtml" -->
