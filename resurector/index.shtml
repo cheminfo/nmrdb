@@ -1,30 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Resurect spectra from inline experimental part assignment</title>
-    <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
-    <meta name="keywords" content="NMR resurrector, Nuclear magnetic resonance, experimental part">
-    <meta name="description" content="Recreate (resurect) 1H and 13C NMR spectra from the inline assignment from a publication experimental part.">
-</head>
-
-<body>
-
-<center>
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-            <td align="left" valign="top">
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" background="../images/rigla_sus.jpg" style="background-repeat:repeat-x; background-position:top">
-                    <!--#include virtual="../header.html" -->
-                    <!--#include virtual="../menu.html" --><!--#include virtual="../social.html" -->
-                    <!--#include virtual="nmrresurrect.html" -->
-                    <!--#include virtual="../visualizer_lactame/index.html" -->
-                    <!--#include virtual="../footer.html" -->
-                </table>
-            </td>
-        </tr>
-    </table>
-</center>
-<!--#include virtual="../menuScript.html" -->
-</body>
-</html>
+<!--#include virtual="../views.shtml" -->
+<!--#set var="view" value="$resurrect_view" -->
+<!--#set var="static_content" value="$resurrect_static" -->
+<!--#include virtual="../index.shtml" -->
