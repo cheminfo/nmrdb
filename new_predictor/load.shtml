@@ -1,9 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <!--#include virtual="../visualizer_lactame/load-head.html" -->
-</head>
-<body>
-<!--#include virtual="../visualizer_lactame/load-body.html" -->
-</body>
-</html>
+<!--#set var="view" value="./view.json" -->
+<!--#include virtual="../visualizer_lactame/load.shtml" -->

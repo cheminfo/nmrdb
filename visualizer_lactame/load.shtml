@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--#include virtual="./load-head.html" -->
+</head>
+<body>
+<!--#include virtual="./load-body.shtml" -->
+</body>
+</html>
