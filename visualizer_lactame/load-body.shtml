@@ -1,7 +1,7 @@
 <div id="message"></div>
 <script type="text/javascript">
     var $div = $('#message');
-    $.getJSON('http://direct.lactame.com/visualizer/versions.php').then(function(versions) {
+    $.getJSON('http://www.lactame.com/visualizer/versions.php').then(function(versions) {
         var uri = new URI(document.location.href);
         var search = uri.search(true);
         var url;
