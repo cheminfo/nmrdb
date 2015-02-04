@@ -12,7 +12,7 @@
                 }
             }
         }
-        var prefix = 'http://www.lactame.com/visualizer/';
+        var prefix = 'http://direct.lactame.com/visualizer/';
         visualizer.setAttribute('data-main', prefix + version + '/init');
         visualizer.setAttribute('src', prefix + version + '/components/requirejs/require.js');
         document.head.appendChild(visualizer);

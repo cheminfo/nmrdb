@@ -6,7 +6,7 @@
 <!--#set var="13c_static" value="./13c/static.html" -->
 
 <!--#set var="hmbc_view" value="/couchcheminfo/b50564ac9d207212f8e5ae8167a68433/view.json" -->
-<!--#set var="hmbc_static" value="./13c/static.html" -->
+<!--#set var="hmbc_static" value="./hmbc/static.html" -->
 
 <!--#set var="cosy_static" value="./cosy/static.html" -->
 <!--#set var="cosy_view" value="/couchcheminfo/b50564ac9d207212f8e5ae8167a607ed/view.json" -->
