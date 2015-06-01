@@ -28,7 +28,7 @@
         <div id="ci-visualizer" style="margin-top: 15px"
             viewURL="<!--#echo var="view" -->"
             dataURL="<!--#echo var="data" -->"
-            config="../noedit.json"/>
+            config="../noedit.json"></div>
     </td>
     <td class="right"></td>
 </tr>
