@@ -1,0 +1,4 @@
+<!--#include virtual="../views.shtml" -->
+<!--#set var="view" value="$diastereotopic_view" -->
+<!--#set var="data" value="$diastereotopic_data" -->
+<!--#include virtual="../visualizer_lactame/load.shtml" -->

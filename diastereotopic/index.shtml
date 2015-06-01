@@ -1,0 +1,8 @@
+<!--#include virtual="../views.shtml" -->
+<!--#set var="view" value="$diastereotopic_view" -->
+<!--#set var="data" value="$diastereotopic_view" -->
+<!--#set var="static_content" value="$diastereotopic_static" -->
+<!--#set var="title" value="Determine the number of non equivalent protons" -->
+<!--#set var="keywords" value="diastereotopicity, enantiotopicity, homotopicity, diastereotopic, enantiotopic, homotopic, NMR" -->
+<!--#set var="description" value="Determine whihc protons are homotopic / enantiotopic versus the diastereotopic" -->
+<!--#include virtual="../index.shtml" -->

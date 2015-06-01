@@ -20,6 +20,15 @@
 <!--#set var="predictor_all_view" value="http://couch.cheminfo.org/cheminfo/1a2f56c6e19761ec8e64c07c007096b8/view.json" -->
 <!--#set var="predictor_all_static" value="./predictor_all/static.html" -->
 
+<!--#set var="diastereotopic_view" value="http://couch.cheminfo.org/cheminfo/5ee7ee293b3a1e9a18ee67bbc2371275/view.json" -->
+<!--#set var="diastereotopic_data" value="http://couch.cheminfo.org/cheminfo/5ee7ee293b3a1e9a18ee67bbc2371275/view.json" -->
+<!--#set var="diastereotopic_static" value="./diastereotopic/static.html" -->
+
+<!--#set var="exercises_1h_view" value="http://couch.cheminfo.org/cheminfo/02bbff64bb0715fca54b4a60c233d4df/view.json" -->
+<!--#set var="exercises_1h_data" value="http://couch.cheminfo.org/cheminfo/02bbff64bb0715fca54b4a60c233d4df/view.json" -->
+<!--#set var="exercises_1h_static" value="./exercises_1h/static.html" -->
+
+
 <!--#set var="no_view" value="none" -->
 <!--#set var="about_static" value="./about/about.html" -->
 <!--#set var="contact_static" value="./contact/contact.html" -->
