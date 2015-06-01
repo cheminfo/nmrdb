@@ -25,7 +25,10 @@
 <tr>
     <td class="left"></td>
     <td colspan="3">
-        <div id="ci-visualizer" style="margin-top: 15px" viewURL="<!--#echo var="view" -->" config="../noedit.json"/>
+        <div id="ci-visualizer" style="margin-top: 15px"
+            viewURL="<!--#echo var="view" -->"
+            dataURL="<!--#echo var="data" -->"
+            config="../noedit.json"/>
     </td>
     <td class="right"></td>
 </tr>
