@@ -8,22 +8,31 @@
 
                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
-                            <td align="left" valign="top" class="menu">
+                            <td align="left" valign="top">
                                 <table border="0" cellspacing="2" cellpadding="3">
                                     <tr>
                                         <td>
-                                            <ul class="menu">
-                                                <li class="about"><a href="../about/">About</a></li>
-                                                <li class="predictor_all"><a href="../predictor_all/">Predict all</a> </li>
-                                                <li class="new_predictor"><a href="../new_predictor/">Predict 1H NMR</a> </li>
-                                                <li class="13c"><a href="../13c/">Predict 13C NMR</a> </li>
-                                                <li class="cosy"><a href="../cosy/">Predict COSY</a></li>
-                                                <li class="hmbc"><a href="../hmbc/">Predict HMBC/HSQC</a></li>
-                                                <li class="simulator"><a href="../simulator/">NMR Simulator</a> </li>
-                                                <li class="resurector"><a href="../resurector/">NMR Resurrector</a> </li>
-                                                <li class="service"><a href="../service/">Web services</a> </li>
-                                                <li class="contact"><a href="../contact/">Contact</a> </li>
-                                            </ul>
+                                            <div id='cssmenu'>
+                                                <ul>
+                                                    <li class="new_predictor last"><a href="../new_predictor/"><span>Predict 1H NMR</span></a> </li>
+                                                    <li class="13c last"><a href="../13c/"><span>Predict 13C NMR</span></a> </li>
+                                                    <li class='has-sub'><a href='#'><span>Predict 2D</span></a>
+                                                        <ul>
+                                                            <li class="predictor_all last"><a href="../predictor_all/"><span>Predict all</span></a> </li>
+                                                            <li class="cosy last"><a href="../cosy/"><span>Predict COSY</span></a></li>
+                                                            <li class="hmbc last"><a href="../hmbc/"><span>Predict HMBC/HSQC</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class='has-sub'><a href='#'><span>Utilities</span></a>
+                                                        <ul>
+                                                            <li class="simulator last"><a href="../simulator/"><span>NMR Simulator</span></a> </li>
+                                                            <li class="resurector last"><a href="../resurector/"><span>NMR Resurrector</span></a> </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="service last"><a href="../service/"><span>Web services</span></a> </li>
+                                                    <li class="contact last"><a href="../contact/"><span>Contact</span></a> </li>
+                                                </ul>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>
@@ -37,3 +46,56 @@
 
     <td class="right"></td>
 </tr>
+
+<script>
+    ( function( $ ) {
+        $( document ).ready(function() {
+            $('#cssmenu').prepend('<div id="indicatorContainer"><div id="pIndicator"><div id="cIndicator"></div></div></div>');
+            var activeElement = $('#cssmenu>ul>li:first');
+
+            $('#cssmenu>ul>li').each(function() {
+                if ($(this).hasClass('active')) {
+                    activeElement = $(this);
+                }
+            });
+
+
+            var posLeft = activeElement.position().left;
+            var elementWidth = activeElement.width();
+            posLeft = posLeft + elementWidth/2 -6;
+            if (activeElement.hasClass('has-sub')) {
+                posLeft -= 6;
+            }
+
+            $('#cssmenu #pIndicator').css('left', posLeft);
+            var element, leftPos, indicator = $('#cssmenu #pIndicator');
+
+            $("#cssmenu>ul>li").hover(function() {
+                        element = $(this);
+                        var w = element.width();
+                        if ($(this).hasClass('has-sub'))
+                        {
+                            leftPos = element.position().left + w/2 - 12;
+                        }
+                        else {
+                            leftPos = element.position().left + w/2 - 6;
+                        }
+
+                        $('#cssmenu #pIndicator').css('left', leftPos);
+                    }
+                    , function() {
+                        $('#cssmenu #pIndicator').css('left', posLeft);
+                    });
+
+            $('#cssmenu>ul').prepend('<li id="menu-button"><a>Menu</a></li>');
+            $( "#menu-button" ).click(function(){
+                if ($(this).parent().hasClass('open')) {
+                    $(this).parent().removeClass('open');
+                }
+                else {
+                    $(this).parent().addClass('open');
+                }
+            });
+        });
+    } )( jQuery );
+</script>
