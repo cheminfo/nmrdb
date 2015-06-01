@@ -21,11 +21,11 @@
 <!--#set var="predictor_all_static" value="./predictor_all/static.html" -->
 
 <!--#set var="diastereotopic_view" value="http://couch.cheminfo.org/cheminfo/5ee7ee293b3a1e9a18ee67bbc2371275/view.json" -->
-<!--#set var="diastereotopic_data" value="http://couch.cheminfo.org/cheminfo/5ee7ee293b3a1e9a18ee67bbc2371275/view.json" -->
+<!--#set var="diastereotopic_data" value="http://couch.cheminfo.org/cheminfo/5ee7ee293b3a1e9a18ee67bbc2371275/data.json" -->
 <!--#set var="diastereotopic_static" value="./diastereotopic/static.html" -->
 
 <!--#set var="exercises_1h_view" value="http://couch.cheminfo.org/cheminfo/02bbff64bb0715fca54b4a60c233d4df/view.json" -->
-<!--#set var="exercises_1h_data" value="http://couch.cheminfo.org/cheminfo/02bbff64bb0715fca54b4a60c233d4df/view.json" -->
+<!--#set var="exercises_1h_data" value="http://couch.cheminfo.org/cheminfo/02bbff64bb0715fca54b4a60c233d4df/data.json" -->
 <!--#set var="exercises_1h_static" value="./exercises_1h/static.html" -->
 
 
