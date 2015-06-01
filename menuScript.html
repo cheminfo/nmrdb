@@ -7,14 +7,10 @@
         path = path.substr(0, idx);
     }
     reg = /\/([^\/]*)\/?$/;
-    console.log('path:', path);
     var m = reg.exec(path);
     if(m[1]) {
-        console.log(m && m[1]);
         var elements = document.getElementsByClassName(m[1]);
         if(elements && elements[0]) {
-            console.log('bbbingo');
-//            elements[0].className = elements[0].className + " current";
             elements[0].className = elements[0].className + " current";
         }
     }
