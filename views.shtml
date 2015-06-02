@@ -30,6 +30,7 @@
 
 
 <!--#set var="no_view" value="none" -->
+<!--#set var="no_data" value="none" -->
 <!--#set var="about_static" value="./about/about.html" -->
 <!--#set var="contact_static" value="./contact/contact.html" -->
 <!--#set var="service_static" value="./service/service.html" -->

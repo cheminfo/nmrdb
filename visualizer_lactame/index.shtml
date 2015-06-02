@@ -27,7 +27,9 @@
     <td colspan="3">
         <div id="ci-visualizer" style="margin-top: 15px"
             viewURL="<!--#echo var="view" -->"
+            <!--#if expr="$data != none" -->
             dataURL="<!--#echo var="data" -->"
+            <!--#endif -->
             config="../noedit.json"></div>
     </td>
     <td class="right"></td>

@@ -1,5 +1,6 @@
 <!--#include virtual="../views.shtml" -->
 <!--#set var="view" value="$resurrect_view" -->
+<!--#set var="data" value="$no_data" -->
 <!--#set var="static_content" value="$resurrect_static" -->
 <!--#set var="title" value="Resurect spectra from inline experimental part assignment" -->
 <!--#set var="keywords" value="NMR resurrector, Nuclear magnetic resonance, experimental part" -->

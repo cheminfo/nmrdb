@@ -1,5 +1,6 @@
 <!--#include virtual="../views.shtml" -->
 <!--#set var="view" value="$simulator_view" -->
+<!--#set var="data" value="$no_data" -->
 <!--#set var="static_content" value="$simulator_static" -->
 <!--#set var="title" value="Simulate NMR second order effect directly on-line" -->
 <!--#set var="keywords" value="NMR simulator, Nuclear magnetic resonance, AB, ABX, AA'XX', Second order effect" -->

@@ -1,5 +1,6 @@
 <!--#include virtual="../views.shtml" -->
 <!--#set var="view" value="$hmbc_view" -->
+<!--#set var="data" value="$no_data" -->
 <!--#set var="static_content" value="$hmbc_static" -->
 <!--#set var="title" value="HMBC, HSQC NMR prediction" -->
 <!--#set var="keywords" value="NMR prediction, HMBC Prediction, HSQC Prediction, Nuclear magnetic resonance" -->
