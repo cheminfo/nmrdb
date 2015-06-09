@@ -28,6 +28,8 @@
 <!--#set var="exercises_1h_data" value="http://couch.cheminfo.org/cheminfo/02bbff64bb0715fca54b4a60c233d4df/data.json" -->
 <!--#set var="exercises_1h_static" value="./exercises_1h/static.html" -->
 
+<!--#set var="assigner_1h_view" value="http://couch.cheminfo.org/cheminfo/92a706528b15c5663cb5844af0c0acd2/view.json" -->
+<!--#set var="assigner_1h_static" value="./assigner_1h/static.html" -->
 
 <!--#set var="no_view" value="none" -->
 <!--#set var="no_data" value="none" -->

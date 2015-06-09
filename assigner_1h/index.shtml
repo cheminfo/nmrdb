@@ -1,0 +1,7 @@
+<!--#include virtual="../views.shtml" -->
+<!--#set var="view" value="$assigner_1h_view" -->
+<!--#set var="static_content" value="$assigner_1h_static" -->
+<!--#set var="title" value="Assignment NMR exercises" -->
+<!--#set var="keywords" value="NMR spectra assignment" -->
+<!--#set var="description" value="" -->
+<!--#include virtual="../index.shtml" -->
