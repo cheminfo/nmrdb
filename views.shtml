@@ -1,34 +1,33 @@
-<!--#set var="new_predictor_view" value="http://couch.cheminfo.org/cheminfo-public/eea0ba081ea2cc99da5c1aed2f29a0a8/view.json" -->
+<!--#set var="new_predictor_view" value="https://couch.cheminfo.org/cheminfo-public/eea0ba081ea2cc99da5c1aed2f29a0a8/view.json" -->
 <!--#set var="new_predictor_static" value="./new_predictor/static.html" -->
 <!--#set var="new_predictor_head" value="./new_predictor/head.html" -->
 
-<!--#set var="13c_view" value="http://couch.cheminfo.org/cheminfo-public/b50564ac9d207212f8e5ae8167a45f3c/view.json" -->
+<!--#set var="13c_view" value="https://couch.cheminfo.org/cheminfo-public/b50564ac9d207212f8e5ae8167a45f3c/view.json" -->
 <!--#set var="13c_static" value="./13c/static.html" -->
 
-<!--#set var="hmbc_view" value="http://couch.cheminfo.org/cheminfo-public/b50564ac9d207212f8e5ae8167a68433/view.json" -->
+<!--#set var="hmbc_view" value="https://couch.cheminfo.org/cheminfo-public/b50564ac9d207212f8e5ae8167a68433/view.json" -->
 <!--#set var="hmbc_static" value="./hmbc/static.html" -->
 
 <!--#set var="cosy_static" value="./cosy/static.html" -->
-<!--#set var="cosy_view" value="http://couch.cheminfo.org/cheminfo-public/b50564ac9d207212f8e5ae8167a607ed/view.json" -->
+<!--#set var="cosy_view" value="https://couch.cheminfo.org/cheminfo-public/b50564ac9d207212f8e5ae8167a607ed/view.json" -->
 
-<!--#set var="resurrect_view" value="http://couch.cheminfo.org/cheminfo-public/b50564ac9d207212f8e5ae8167a5b107/view.json" -->
+<!--#set var="resurrect_view" value="https://couch.cheminfo.org/cheminfo-public/b50564ac9d207212f8e5ae8167a5b107/view.json" -->
 <!--#set var="resurrect_static" value="./resurector/static.html" -->
 
-<!--#set var="simulator_view" value="http://couch.cheminfo.org/cheminfo-public/4b7669c5ec0a15e6fb3994f53b950277/view.json" -->
+<!--#set var="simulator_view" value="https://couch.cheminfo.org/cheminfo-public/4b7669c5ec0a15e6fb3994f53b950277/view.json" -->
 <!--#set var="simulator_static" value="./simulator/static.html" -->
 
-<!--#set var="predictor_all_view" value="http://couch.cheminfo.org/cheminfo-public/1a2f56c6e19761ec8e64c07c007096b8/view.json" -->
+<!--#set var="predictor_all_view" value="https://couch.cheminfo.org/cheminfo-public/1a2f56c6e19761ec8e64c07c007096b8/view.json" -->
 <!--#set var="predictor_all_static" value="./predictor_all/static.html" -->
 
-<!--#set var="diastereotopic_view" value="http://couch.cheminfo.org/cheminfo-public/5ee7ee293b3a1e9a18ee67bbc2371275/view.json" -->
-<!--#set var="diastereotopic_data" value="http://couch.cheminfo.org/cheminfo-public/5ee7ee293b3a1e9a18ee67bbc2371275/data.json" -->
+<!--#set var="diastereotopic_view" value="https://couch.cheminfo.org/cheminfo-public/5ee7ee293b3a1e9a18ee67bbc2371275/view.json" -->
+<!--#set var="diastereotopic_data" value="https://couch.cheminfo.org/cheminfo-public/5ee7ee293b3a1e9a18ee67bbc2371275/data.json" -->
 <!--#set var="diastereotopic_static" value="./diastereotopic/static.html" -->
 
-<!--#set var="exercises_1h_view" value="http://couch.cheminfo.org/cheminfo-public/02bbff64bb0715fca54b4a60c233d4df/view.json" -->
-<!--#set var="exercises_1h_data" value="http://couch.cheminfo.org/cheminfo-public/02bbff64bb0715fca54b4a60c233d4df/data.json" -->
+<!--#set var="exercises_1h_view" value="https://couch.cheminfo.org/cheminfo-public/02bbff64bb0715fca54b4a60c233d4df/view.json" -->
 <!--#set var="exercises_1h_static" value="./exercises_1h/static.html" -->
 
-<!--#set var="assigner_1h_view" value="http://couch.cheminfo.org/cheminfo-public/92a706528b15c5663cb5844af0c0acd2/view.json" -->
+<!--#set var="assigner_1h_view" value="https://couch.cheminfo.org/cheminfo-public/92a706528b15c5663cb5844af0c0acd2/view.json" -->
 <!--#set var="assigner_1h_static" value="./assigner_1h/static.html" -->
 
 <!--#set var="no_view" value="none" -->

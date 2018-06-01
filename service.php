@@ -52,8 +52,8 @@
     delete data.name;
 
     if(!service || typeof service !== "string" || !views[service]) {
-        writeBody('Error: '+service+' service does not exist');
-    } else {
+        writeBody('Error: '+escape(service)+' service does not exist');
+	} else {
         try{
             if(window.localStorage) {
                 window.localStorage.setItem('external_cache', JSON.stringify(data));

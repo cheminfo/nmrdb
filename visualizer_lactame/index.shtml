@@ -16,7 +16,7 @@
             }
         }
         var subdomain = direct ? 'direct' : 'www';
-        var prefix = 'http://' + subdomain + '.lactame.com/visualizer/';
+        var prefix = 'https://' + subdomain + '.lactame.com/visualizer/';
         visualizer.setAttribute('data-main', prefix + version + '/init');
         visualizer.setAttribute('src', prefix + version + '/components/requirejs/require.js');
         document.head.appendChild(visualizer);
